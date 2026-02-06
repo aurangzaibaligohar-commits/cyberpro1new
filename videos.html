@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberGuard | Video Library - Master Cyber Security</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-black text-white font-sans">
+
+    <!-- Navbar Placeholder -->
+    <!-- Navbar yahan load hoga -->
+<div id="navbar"></div>
+
+    <!-- Live Alerts Bar (same as index) -->
+  <div class="news-container" style="background: #111; color: #0f0; padding: 3px; font-family: 'Courier New', monospace; border: 1px solid #333;">
+    <span style="background: #f00; color: #fff; padding: 2px 8px; font-weight: bold; margin-right: 10px;">CYBER ALERTS:</span>
+    
+    <marquee id="cyber-marquee" behavior="scroll" direction="left" scrollamount="6">
+        Loading latest worldwide cyber security alerts...
+    </marquee>
+</div>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="relative h-screen flex items-center justify-center overflow-hidden border-b border-cyan-900/30">
+        <div class="absolute inset-0 z-0 opacity-10" style="background-image: linear-gradient(#00d4ff 1px, transparent 1px), linear-gradient(90deg, #00d4ff 1px, transparent 1px); background-size: 45px 45px;"></div>
+        <div class="absolute inset-0 z-0">
+            <div class="absolute top-1/4 left-1/4 w-72 h-72 bg-cyan-500 rounded-full filter blur-[100px] animate-blob opacity-20"></div>
+            <div class="absolute bottom-1/4 right-1/3 w-72 h-72 bg-blue-600 rounded-full filter blur-[100px] animate-blob animation-delay-2000 opacity-20"></div>
+        </div>
+        <!-- Side status bars -->
+        <div class="absolute left-10 top-1/2 -translate-y-1/2 hidden xl:block">
+            <div class="font-mono text-[9px] text-cyan-500/30 tracking-[0.4em] uppercase [writing-mode:vertical-lr] rotate-180">Node_Status: Online // Latency: 14ms // TLS_1.3</div>
+        </div>
+        <div class="absolute right-10 top-1/2 -translate-y-1/2 hidden xl:block text-right">
+            <div class="font-mono text-[9px] text-cyan-500/30 tracking-[0.4em] uppercase [writing-mode:vertical-lr]">Encryption: AES_256 // Firewall: Level_Max // SOC: Active</div>
+        </div>
+
+        <div class="relative z-10 text-center px-4">
+            <div class="inline-flex items-center gap-3 px-4 py-1.5 mb-8 rounded-full border border-cyan-500/20 bg-cyan-500/5 backdrop-blur-md">
+                <span class="relative flex h-2 w-2">
+                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-2 w-2 bg-cyan-500"></span>
+                </span>
+                <span class="text-cyan-400 text-[10px] font-black tracking-[0.3em] uppercase">Video Library: Active</span>
+            </div>
+           <section class="relative w-full min-h-[70vh] md:min-h-screen flex items-center justify-center overflow-hidden bg-black py-12 md:py-0">
+  <!-- Background Video -->
+  <video
+    autoplay
+    loop
+    muted
+    playsinline
+    class="absolute inset-0 w-full h-full object-cover z-0 opacity-40 md:opacity-50"
+  >
+    <source src="about.mp4" type="video/mp4" />
+    <source src="https://assets.mixkit.co/videos/preview/mixkit-digital-animation-of-binary-code-and-data-9964-large.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Overlay gradient (stronger on mobile for better text contrast) -->
+  <div class="absolute inset-0 bg-gradient-to-b from-black/85 via-black/50 to-black/90 z-10"></div>
+
+  <!-- Content container -->
+  <div class="container mx-auto px-5 sm:px-6 lg:px-8 relative z-20 text-center">
+    <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black mb-5 md:mb-8 tracking-tight leading-tight uppercase text-white">
+      MASTER<br class="sm:hidden" />
+      <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-600 neon-text">
+        CYBER SECURITY
+      </span>
+    </h1>
+
+    <p class="text-base sm:text-lg md:text-xl text-gray-300 max-w-xl sm:max-w-2xl md:max-w-3xl mx-auto mb-8 md:mb-12 leading-relaxed font-light">
+      Dive deep into expert-curated videos — from beginner basics to advanced penetration testing, real threats & strong defenses.
+    </p>
+
+    <!-- Buttons – stack on mobile, side-by-side on desktop -->
+    <div class="flex flex-col sm:flex-row justify-center items-center gap-5 sm:gap-6">
+      <!-- Primary button -->
+      <a
+        href="#video-gallery"
+        class="group relative px-8 sm:px-10 py-4 bg-cyan-500 hover:bg-cyan-400 text-black font-extrabold rounded-xl transition-all duration-300 shadow-[0_0_20px_rgba(0,212,255,0.4)] hover:shadow-[0_0_35px_rgba(0,212,255,0.6)] overflow-hidden w-full sm:w-auto min-w-[220px]"
+      >
+        <span class="relative z-10 uppercase tracking-wider text-sm sm:text-base">
+          Explore Library <i class="fas fa-play ml-2"></i>
+        </span>
+        <div
+          class="absolute top-0 -inset-full h-full w-1/2 block transform -skew-x-12 bg-gradient-to-r from-transparent to-white/40 opacity-0 group-hover:opacity-100 group-hover:animate-shine transition-opacity duration-500"
+        ></div>
+      </a>
+
+      <!-- Secondary button -->
+      <a
+        href="tools.html"
+        class="glass px-8 sm:px-10 py-4 text-white font-bold rounded-xl border border-white/30 hover:bg-white/10 transition-all duration-300 flex items-center justify-center gap-3 uppercase tracking-wider text-sm sm:text-base w-full sm:w-auto min-w-[220px]"
+      >
+        <i class="fas fa-tools text-cyan-400"></i>
+        Security Tools
+      </a>
+    </div>
+  </div>
+</section>
+            <!-- Certifications badges -->
+            <div class="flex flex-wrap justify-center items-center gap-8 opacity-40 grayscale hover:grayscale-0 transition-all duration-700">
+                <div class="flex items-center gap-2"><i class="fas fa-shield-check text-lg"></i><span class="text-[9px] font-bold uppercase tracking-widest">ISO 27001</span></div>
+                <div class="flex items-center gap-2"><i class="fas fa-fingerprint text-lg"></i><span class="text-[9px] font-bold uppercase tracking-widest">NIST Certified</span></div>
+                <div class="flex items-center gap-2"><i class="fas fa-user-lock text-lg"></i><span class="text-[9px] font-bold uppercase tracking-widest">GDPR Ready</span></div>
+            </div>
+        </div>
+        <div class="absolute bottom-6 left-1/2 -translate-x-1/2 flex flex-col items-center opacity-30">
+            <div class="w-[1px] h-10 bg-gradient-to-b from-cyan-500 to-transparent"></div>
+        </div>
+    </header>
+
+    <!-- Trusted by / Curated section (same as index) -->
+    <section class="relative py-24 bg-[#080a0f] border-b border-white/5 overflow-hidden">
+        <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-cyan-500/5 rounded-full filter blur-[120px]"></div>
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="flex flex-col lg:flex-row items-center gap-16">
+                <div class="lg:w-1/2 w-full order-2 lg:order-1">
+                    <div class="glass rounded-[2rem] p-1 border border-cyan-500/20 bg-black/40 overflow-hidden shadow-2xl shadow-cyan-950/20">
+                        <div class="relative aspect-video rounded-[1.8rem] overflow-hidden flex items-center justify-center bg-[#0d1117]">
+                            <div class="absolute inset-0 opacity-20" style="background-image: url('https://www.transparenttextures.com/patterns/carbon-fibre.png');"></div>
+                            <div class="text-center relative">
+                                <div class="relative w-32 h-32 mx-auto mb-6">
+                                    <div class="absolute inset-0 border-2 border-cyan-500/30 rounded-full animate-[ping_3s_linear_infinite]"></div>
+                                    <div class="absolute inset-0 border border-cyan-500/50 rounded-full flex items-center justify-center bg-cyan-500/5">
+                                        <i class="fas fa-satellite-dish text-cyan-500 text-4xl"></i>
+                                    </div>
+                                </div>
+                                <h4 class="text-cyan-400 font-mono text-sm tracking-[0.3em] uppercase animate-pulse">Scanning Video Database...</h4>
+                                <div class="mt-4 flex gap-2 justify-center">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-red-500 animate-pulse"></span>
+                                    <span class="w-1.5 h-1.5 rounded-full bg-cyan-500 animate-pulse delay-75"></span>
+                                    <span class="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse delay-150"></span>
+                                </div>
+                            </div>
+                            <div class="absolute bottom-4 left-6 right-6 flex justify-between font-mono text-[9px] text-gray-500 border-t border-white/5 pt-3">
+                                <span>LATENCY: 12ms</span>
+                                <span class="text-cyan-600">ENCRYPTION: ACTIVE</span>
+                                <span>UPTIME: 99.9%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 order-1 lg:order-2">
+                    <div class="inline-block px-3 py-1 rounded border border-cyan-500/30 bg-cyan-500/10 text-cyan-500 text-[10px] font-black mb-6 uppercase tracking-widest">Professional Video Library</div>
+                    <h2 class="text-4xl md:text-3xl font-black mb-6 uppercase italic leading-tight tracking-tighter text-white">
+                        Curated by <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">Security Experts</span>
+                    </h2>
+                    <p class="text-gray-400 mb-10 text-sm leading-relaxed max-w-lg">
+                        Access premium video content covering everything from basic awareness to advanced penetration testing, updated regularly with the latest threats and defenses.
+                    </p>
+                    <div class="grid grid-cols-3 gap-8 opacity-40 hover:opacity-100 transition-opacity duration-500 items-center grayscale hover:grayscale-0">
+                        <div class="flex items-center gap-2 group cursor-pointer"><i class="fab fa-aws text-2xl group-hover:text-yellow-500 transition-colors"></i><span class="font-bold text-[10px]">AWS_Shield</span></div>
+                        <div class="flex items-center gap-2 group cursor-pointer"><i class="fab fa-google-cloud text-2xl group-hover:text-blue-500 transition-colors"></i><span class="font-bold text-[10px]">Cloud_Guard</span></div>
+                        <div class="flex items-center gap-2 group cursor-pointer"><i class="fab fa-microsoft text-2xl group-hover:text-blue-400 transition-colors"></i><span class="font-bold text-[10px]">Azure_Sec</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section (updated for videos) -->
+   <section id="stats-section" class="py-12 bg-black border-y border-white/5 relative overflow-hidden">
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full bg-cyan-500/5 blur-[120px] pointer-events-none"></div>
+
+    <div class="container mx-auto px-6 relative z-10">
+        <h2 class="text-2xl md:text-3xl font-black uppercase italic tracking-tighter text-white mb-10 text-center">
+            Our Digital <span class="text-cyan-500">Footprint</span>
+        </h2>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div class="p-4 group">
+                <h3 class="text-4xl md:text-5xl font-black text-cyan-500 counter flex justify-center items-baseline" data-target="500">
+                    0<span class="text-2xl ml-1">+</span>
+                </h3>
+                <p class="text-[10px] text-gray-500 uppercase tracking-[0.2em] mt-3 font-bold group-hover:text-white transition-colors">Videos Available</p>
+            </div>
+
+            <div class="p-4 group">
+                <h3 class="text-4xl md:text-5xl font-black text-white counter" data-target="100000">
+                    0<span class="text-2xl ml-1">+</span>
+                </h3>
+                <p class="text-[10px] text-gray-500 uppercase tracking-[0.2em] mt-3 font-bold group-hover:text-cyan-500 transition-colors">Total Views</p>
+            </div>
+
+            <div class="p-4 group">
+                <h3 class="text-4xl md:text-5xl font-black text-cyan-400 counter flex justify-center items-baseline" data-target="50">
+                    0<span class="text-2xl ml-1">+</span>
+                </h3>
+                <p class="text-[10px] text-gray-500 uppercase tracking-[0.2em] mt-3 font-bold group-hover:text-white transition-colors">Categories</p>
+            </div>
+
+            <div class="p-4 group">
+                <h3 class="text-4xl md:text-5xl font-black text-cyan-500 counter flex justify-center items-baseline" data-target="99">
+                    0<span class="text-2xl ml-1">%</span>
+                </h3>
+                <p class="text-[10px] text-gray-500 uppercase tracking-[0.2em] mt-3 font-bold group-hover:text-white transition-colors">Uptime</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+   <!-- Video Categories Explained - Ab clickable & linked to gallery -->
+<section class="py-24 bg-black/40">
+    <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-black mb-16 text-center uppercase tracking-tighter italic">
+            Video Categories <span class="text-cyan-500">Explained</span>
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+            <div class="glass p-8 rounded-2xl border-l-4 border-cyan-500 hover:bg-cyan-500/5 transition-all group cursor-pointer" 
+                 data-category="basics" onclick="filterByCategory('basics')">
+                <div class="text-cyan-500 text-3xl font-black mb-4 group-hover:scale-110 transition">01.</div>
+                <h4 class="text-xl font-bold mb-2 text-white">Basics</h4>
+                <p class="text-sm text-gray-500 leading-relaxed">Introductory videos on cyber security fundamentals for beginners.</p>
+            </div>
+            <div class="glass p-8 rounded-2xl border-l-4 border-white hover:bg-white/5 transition-all group cursor-pointer" 
+                 data-category="advanced" onclick="filterByCategory('advanced')">
+                <div class="text-white text-3xl font-black mb-4 group-hover:scale-110 transition">02.</div>
+                <h4 class="text-xl font-bold mb-2 text-white">Advanced</h4>
+                <p class="text-sm text-gray-500 leading-relaxed">Deep dives into penetration testing and ethical hacking.</p>
+            </div>
+            <div class="glass p-8 rounded-2xl border-l-4 border-cyan-500 hover:bg-cyan-500/5 transition-all group cursor-pointer" 
+                 data-category="threats" onclick="filterByCategory('threats')">
+                <div class="text-cyan-500 text-3xl font-black mb-4 group-hover:scale-110 transition">03.</div>
+                <h4 class="text-xl font-bold mb-2 text-white">Threats</h4>
+                <p class="text-sm text-gray-500 leading-relaxed">Real-world examples of phishing, malware, and ransomware attacks.</p>
+            </div>
+            <div class="glass p-8 rounded-2xl border-l-4 border-white hover:bg-white/5 transition-all group cursor-pointer" 
+                 data-category="defenses" onclick="filterByCategory('defenses')">
+                <div class="text-white text-3xl font-black mb-4 group-hover:scale-110 transition">04.</div>
+                <h4 class="text-xl font-bold mb-2 text-white">Defenses</h4>
+                <p class="text-sm text-gray-500 leading-relaxed">Strategies for firewalls, encryption, and secure coding practices.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Featured Video -->
+    <section class="py-24 bg-gray-900/10 text-center">
+        <h2 class="text-3xl font-black mb-12 uppercase italic">Featured <span class="text-cyan-400">Video</span></h2>
+        <div class="max-w-4xl mx-auto p-2 glass rounded-3xl shadow-2xl shadow-cyan-500/10">
+            <div class="aspect-video relative overflow-hidden rounded-2xl">
+                <iframe class="absolute inset-0 w-full h-full" src="https://www.youtube.com/embed/WO7wP3QaJ_g?rel=0&modestbranding=1" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Gallery Section with Real Links -->
+    <section id="video-gallery" class="py-24 bg-black/60 overflow-hidden border-t border-white/5 relative">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+                <div class="border-l-4 border-cyan-500 pl-6 text-left">
+                    <h2 class="text-3xl font-black uppercase italic tracking-tighter text-white">
+                        Video <span class="text-cyan-500">Gallery</span>
+                    </h2>
+                    <p class="text-gray-500 font-mono text-[10px] mt-2 tracking-[0.3em] uppercase">
+                        Browse & Watch: Latest 2025-2026 Courses (Search, Filter, Paginate)
+                    </p>
+                </div>
+                <div class="flex flex-col md:flex-row items-center gap-4 w-full md:w-auto">
+                    <input type="text" id="video-search" placeholder="Search videos..." class="bg-black/50 border border-white/10 rounded-xl px-6 py-3 text-xs font-mono focus:outline-none focus:border-cyan-500 transition-all text-cyan-400 flex-1 mb-4 md:mb-0">
+                    <select id="video-filter" class="bg-black/50 border border-white/10 rounded-xl px-4 py-3 text-xs font-mono text-cyan-400 focus:outline-none focus:border-cyan-500 transition-all mr-4">
+                        <option value="all">All Categories</option>
+                        <option value="basics">Basics</option>
+                        <option value="advanced">Advanced</option>
+                        <option value="threats">Threats</option>
+                        <option value="defenses">Defenses</option>
+                    </select>
+                    <div class="flex gap-2">
+                        <button id="prev-page" class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-cyan-500 hover:bg-cyan-500 hover:text-black transition-all disabled:opacity-50"><i class="fas fa-chevron-left"></i></button>
+                        <button id="next-page" class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-cyan-500 hover:bg-cyan-500 hover:text-black transition-all disabled:opacity-50"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div id="video-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"></div>
+            <div id="pagination" class="text-center mt-8 text-gray-400"></div>
+        </div>
+    </section>
+
+    <!-- ────────────────────────────────────────────────
+         NAYE PROFESSIONAL SECTIONS (sirf yahan add kiye gaye)
+    ──────────────────────────────────────────────── -->
+
+    <!-- Professional Section 1: Testimonials / Community Feedback -->
+    <section class="py-5 bg-[#0a0d12] relative overflow-hidden">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl md:text-3xl font-black text-center uppercase tracking-tighter italic mb-16">
+                What Our <span class="text-cyan-500">Learners</span> Say
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="glass p-8 rounded-3xl border-t-4 border-cyan-500/60 hover:border-cyan-500 transition-all duration-300">
+                    <div class="flex gap-1 mb-4">
+                        <i class="fas fa-star text-yellow-400 text-lg"></i>
+                        <i class="fas fa-star text-yellow-400 text-lg"></i>
+                        <i class="fas fa-star text-yellow-400 text-lg"></i>
+                        <i class="fas fa-star text-yellow-400 text-lg"></i>
+                        <i class="fas fa-star text-yellow-400 text-lg"></i>
+                    </div>
+                    <p class="text-gray-300 italic mb-6">"Best free cyber security video series on the internet — practical and updated!"</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-14 h-14 rounded-full bg-gradient-to-br from-cyan-600 to-blue-700 flex items-center justify-center text-white font-bold text-xl shadow-lg">ZK</div>
+                        <div>
+                            <h4 class="font-bold text-lg">Zain Khan</h4>
+                            <p class="text-sm text-gray-500">Bug Bounty Researcher</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass p-8 rounded-3xl border-t-4 border-blue-500/60 hover:border-blue-500 transition-all duration-300">
+                    <div class="flex gap-1 mb-4">
+                        <i class="fas fa-star text-yellow-400 text-lg"></i>
+                        <i class="fas fa-star text-yellow-400 text-lg"></i>
+                        <i class="fas fa-star text-yellow-400 text-lg"></i>
+                        <i class="fas fa-star text-yellow-400 text-lg"></i>
+                        <i class="fas fa-star-half-alt text-yellow-400 text-lg"></i>
+                    </div>
+                    <p class="text-gray-300 italic mb-6">"Phishing aur ransomware modules ne hamari company ki awareness 10x badha di."</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-14 h-14 rounded-full bg-gradient-to-br from-blue-600 to-cyan-700 flex items-center justify-center text-white font-bold text-xl shadow-lg">FA</div>
+                        <div>
+                            <h4 class="font-bold text-lg">Fatima Ahmed</h4>
+                            <p class="text-sm text-gray-500">Cyber Trainer</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass p-8 rounded-3xl border-t-4 border-cyan-500/60 hover:border-cyan-500 transition-all duration-300">
+                    <div class="flex gap-1 mb-4">
+                        <i class="fas fa-star text-yellow-400 text-lg"></i>
+                        <i class="fas fa-star text-yellow-400 text-lg"></i>
+                        <i class="fas fa-star text-yellow-400 text-lg"></i>
+                        <i class="fas fa-star text-yellow-400 text-lg"></i>
+                        <i class="fas fa-star text-yellow-400 text-lg"></i>
+                    </div>
+                    <p class="text-gray-300 italic mb-6">"Zero se hero banne ke liye yeh videos hi kaafi hain — bohot clear explanations."</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-14 h-14 rounded-full bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center text-white font-bold text-xl shadow-lg">HB</div>
+                        <div>
+                            <h4 class="font-bold text-lg">Hamza Butt</h4>
+                            <p class="text-sm text-gray-500">Cyber Security Enthusiast</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Section 2: Newsletter / Subscription CTA -->
+    <section class="py-24 bg-gradient-to-b from-black via-[#0a0d12] to-black relative">
+        <div class="absolute inset-0 opacity-5 pointer-events-none" style="background-image: linear-gradient(#00d4ff 1px, transparent 1px), linear-gradient(90deg, #00d4ff 1px, transparent 1px); background-size: 60px 60px;"></div>
+        <div class="container mx-auto px-6 relative z-10 text-center">
+            <div class="max-w-4xl mx-auto glass p-12 md:p-16 rounded-[3rem] border border-cyan-500/20 shadow-2xl shadow-cyan-900/40 backdrop-blur-xl">
+                <i class="fas fa-bell text-7xl text-cyan-500 mb-8 animate-pulse"></i>
+                <h2 class="text-4xl md:text-3xl font-black mb-6 uppercase tracking-tighter leading-tight">
+                    Stay Updated with <span class="text-cyan-500">Cyber Threats</span>
+                </h2>
+                <p class="text-lg md:text-xl text-gray-300 mb-10 max-w-3xl mx-auto leading-relaxed">
+                    Get instant alerts for new videos, zero-day vulnerabilities, exclusive cheat sheets & premium content early access.
+                </p>
+                <form class="flex flex-col md:flex-row gap-4 max-w-2xl mx-auto">
+                    <input type="email" placeholder="your@secure.email" required class="flex-1 bg-black/70 border border-cyan-500/30 rounded-2xl px-8 py-5 text-white placeholder-gray-500 focus:outline-none focus:border-cyan-400 focus:ring-2 focus:ring-cyan-500/30 transition-all text-lg">
+                    <button type="submit" class="bg-gradient-to-r from-cyan-600 to-blue-700 hover:from-cyan-500 hover:to-blue-600 text-black font-extrabold px-12 py-5 rounded-2xl uppercase tracking-widest transition-all shadow-lg shadow-cyan-900/60 hover:shadow-cyan-500/50 text-lg flex items-center justify-center gap-3">
+                        Subscribe <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+                <p class="text-sm text-gray-500 mt-8 opacity-80">
+                    No spam. Your data is AES-256 encrypted. Unsubscribe anytime.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Import -->
+    <div id="footer-placeholder"></div>
+
+    <script>
+        fetch('footer.html')
+            .then(r => r.text())
+            .then(html => {
+                document.getElementById('footer-placeholder').innerHTML = html;
+            })
+            .catch(e => console.log("Footer nahi load hua → ", e));
+    </script>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <script>
+        // Updated Video Data with REAL YouTube links (2025-2026 relevant)
+        const videos = [
+            { id: 1, title: 'Cyber Security Full Course For Beginners 2026', thumbnail: 'https://img.youtube.com/vi/WO7wP3QaJ_g/maxresdefault.jpg', embed: 'https://www.youtube.com/embed/WO7wP3QaJ_g', description: 'Complete beginner to pro course updated for 2026 threats.', category: 'basics', views: 45000 },
+            { id: 2, title: 'Cyber Security Full Course 2026 | Simplilearn', thumbnail: 'https://img.youtube.com/vi/HZzXbxajz80/maxresdefault.jpg', embed: 'https://www.youtube.com/embed/HZzXbxajz80', description: 'Hands-on ethical hacking, phishing, Wireshark demos.', category: 'basics', views: 32000 },
+            { id: 3, title: 'Penetration Testing Full Course in 10 Hours (2025)', thumbnail: 'https://img.youtube.com/vi/18hyoV15hys/maxresdefault.jpg', embed: 'https://www.youtube.com/embed/18hyoV15hys', description: 'Complete pen testing from basics to advanced exploitation.', category: 'advanced', views: 28000 },
+            { id: 4, title: 'Ethical Hacking Full Course for Beginners to Advanced (2025)', thumbnail: 'https://img.youtube.com/vi/DykazjWRrAc/maxresdefault.jpg', embed: 'https://www.youtube.com/embed/DykazjWRrAc', description: 'CEH style course with bug bounty & real attacks.', category: 'advanced', views: 41000 },
+            { id: 5, title: 'Phishing Awareness Training for Employees 2025', thumbnail: 'https://img.youtube.com/vi/1jfm2E_wvBo/maxresdefault.jpg', embed: 'https://www.youtube.com/embed/1jfm2E_wvBo', description: 'Spot phishing, smishing, vishing & prevention tips.', category: 'threats', views: 18000 },
+            { id: 6, title: 'Ransomware Prevention Best Practices', thumbnail: 'https://img.youtube.com/vi/WwidLuxgHo4/maxresdefault.jpg', embed: 'https://www.youtube.com/embed/WwidLuxgHo4', description: 'How to stop ransomware, backups & anti-malware strategies.', category: 'threats', views: 22000 },
+            { id: 7, title: 'Network Penetration Testing Beginners to Advanced 2025', thumbnail: 'https://img.youtube.com/vi/hOgLtGPxArQ/maxresdefault.jpg', embed: 'https://www.youtube.com/embed/hOgLtGPxArQ', description: 'Full network pentest workflow with tools like Nmap.', category: 'defenses', views: 15000 },
+            { id: 8, title: 'How To Start Ethical Hacking in 2025 (FULL COURSE)', thumbnail: 'https://img.youtube.com/vi/u0NdJwAw94Q/maxresdefault.jpg', embed: 'https://www.youtube.com/embed/u0NdJwAw94Q', description: 'Real-world workflow: recon to post-exploitation.', category: 'advanced', views: 29000 },
+            // Add more as needed (expand array for better pagination)
+        ];
+
+        // Rest of the script (renderVideos, filter, pagination, modal) same as before
+        // ... copy from previous code ...
+    </script>
+    <!-- Tumhara pura code yahan tak bilkul same rahega -->
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <script>
+        // Tumhara pura video script (videos array, renderVideos, filterVideos, modal etc.) yahan bilkul same rahega
+        // ... copy from your previous code ...
+    </script>
+
+    <!-- ────────────────────────────────────────────────
+         NAYE PROFESSIONAL + REALISTIC SECTIONS & FUNCTIONALITY
+         (sirf yahan add kiya gaya hai – original code unchanged)
+    ──────────────────────────────────────────────── -->
+
+    <!-- New Section 1: FAQ Accordion (realistic Q&A) -->
+    <section class="py-10 bg-black/70 border-t border-cyan-900/30">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl md:text-5xl font-black text-center uppercase tracking-tighter italic mb-16">
+                Frequently Asked <span class="text-cyan-500">Questions</span>
+            </h2>
+            <div class="max-w-4xl mx-auto space-y-4">
+                <details class="glass rounded-2xl p-6 group cursor-pointer transition-all hover:shadow-cyan-500/20">
+                    <summary class="flex justify-between items-center font-bold text-lg text-white list-none">
+                        Are these videos free to watch?
+                        <i class="fas fa-chevron-down text-cyan-500 group-open:rotate-180 transition-transform duration-300"></i>
+                    </summary>
+                    <div class="mt-4 text-gray-300 text-base leading-relaxed">
+                        Yes, 100% free! No subscription or payment required. We believe security education should be accessible to everyone.
+                    </div>
+                </details>
+
+                <details class="glass rounded-2xl p-6 group cursor-pointer transition-all hover:shadow-cyan-500/20">
+                    <summary class="flex justify-between items-center font-bold text-lg text-white list-none">
+                        Do I need prior knowledge to start?
+                        <i class="fas fa-chevron-down text-cyan-500 group-open:rotate-180 transition-transform duration-300"></i>
+                    </summary>
+                    <div class="mt-4 text-gray-300 text-base leading-relaxed">
+                        No! We have "Basics" category for complete beginners. Start from there and gradually move to advanced topics.
+                    </div>
+                </details>
+
+                <details class="glass rounded-2xl p-6 group cursor-pointer transition-all hover:shadow-cyan-500/20">
+                    <summary class="flex justify-between items-center font-bold text-lg text-white list-none">
+                        Can I download the videos?
+                        <i class="fas fa-chevron-down text-cyan-500 group-open:rotate-180 transition-transform duration-300"></i>
+                    </summary>
+                    <div class="mt-4 text-gray-300 text-base leading-relaxed">
+                        Currently direct download is not available due to copyright, but you can watch offline using YouTube Premium or browser extensions (where allowed).
+                    </div>
+                </details>
+
+                <details class="glass rounded-2xl p-6 group cursor-pointer transition-all hover:shadow-cyan-500/20">
+                    <summary class="flex justify-between items-center font-bold text-lg text-white list-none">
+                        How often are new videos added?
+                        <i class="fas fa-chevron-down text-cyan-500 group-open:rotate-180 transition-transform duration-300"></i>
+                    </summary>
+                    <div class="mt-4 text-gray-300 text-base leading-relaxed">
+                        We add 2–4 new videos every month, focusing on latest threats, tools, and techniques (2025–2026 updates included).
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Section 2: Quick Related Tools Cards -->
+    <section class="py-10 bg-gradient-to-b from-black to-[#05070a]">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl md:text-5xl font-black text-center uppercase tracking-tighter italic mb-16">
+                Recommended <span class="text-cyan-500">Security Tools</span>
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <a href="tools.html#vulnscan" class="glass p-8 rounded-3xl border-t-4 border-cyan-500 hover:border-cyan-400 transition-all group cursor-pointer">
+                    <i class="fas fa-search text-5xl text-cyan-400 mb-6 group-hover:scale-110 transition-transform"></i>
+                    <h3 class="text-2xl font-bold mb-4">VulnScan AI</h3>
+                    <p class="text-gray-400 mb-6">Scan websites, APIs & networks for vulnerabilities in real-time.</p>
+                    <span class="text-cyan-400 font-bold flex items-center gap-2">
+                        Launch Tool <i class="fas fa-arrow-right group-hover:translate-x-2 transition-transform"></i>
+                    </span>
+                </a>
+
+                <a href="tools.html#linkanalyzer" class="glass p-8 rounded-3xl border-t-4 border-blue-500 hover:border-blue-400 transition-all group cursor-pointer">
+                    <i class="fas fa-link text-5xl text-blue-400 mb-6 group-hover:scale-110 transition-transform"></i>
+                    <h3 class="text-2xl font-bold mb-4">Link Analyzer</h3>
+                    <p class="text-gray-400 mb-6">Check suspicious links in sandbox before clicking.</p>
+                    <span class="text-blue-400 font-bold flex items-center gap-2">
+                        Launch Tool <i class="fas fa-arrow-right group-hover:translate-x-2 transition-transform"></i>
+                    </span>
+                </a>
+
+                <a href="tools.html#vaultguard" class="glass p-8 rounded-3xl border-t-4 border-cyan-500 hover:border-cyan-400 transition-all group cursor-pointer">
+                    <i class="fas fa-key text-5xl text-cyan-400 mb-6 group-hover:scale-110 transition-transform"></i>
+                    <h3 class="text-2xl font-bold mb-4">Vault Guard</h3>
+                    <p class="text-gray-400 mb-6">Test password strength & generate ultra-secure passwords.</p>
+                    <span class="text-cyan-400 font-bold flex items-center gap-2">
+                        Launch Tool <i class="fas fa-arrow-right group-hover:translate-x-2 transition-transform"></i>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Import -->
+    <div id="footer-placeholder"></div>
+
+    <script>
+        fetch('footer.html')
+            .then(r => r.text())
+            .then(html => {
+                document.getElementById('footer-placeholder').innerHTML = html;
+            })
+            .catch(e => console.log("Footer nahi load hua → ", e));
+    </script>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <script>
+        // Tumhara pura video script (videos array, renderVideos, filterVideos, modal etc.) yahan bilkul same rahega
+        // ... copy-paste from your previous code ...
+    </script>
+
+    <!-- Back to Top Button Logic -->
+    <script>
+        window.addEventListener('scroll', () => {
+            const btn = document.getElementById('back-to-top');
+            if (window.scrollY > 400) {
+                btn.classList.add('show');
+            } else {
+                btn.classList.remove('show');
+            }
+        });
+
+        document.getElementById('back-to-top')?.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+    <!-- New: FAQ Section (Accordion) -->
+    <section class="py-10 bg-black/80 border-t border-cyan-900/30">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl md:text-5xl font-black text-center uppercase tracking-tighter italic mb-16">
+                Frequently Asked <span class="text-cyan-500">Questions</span>
+            </h2>
+            <div class="max-w-4xl mx-auto space-y-4">
+                <details class="glass rounded-2xl p-6 group cursor-pointer transition-all hover:shadow-cyan-500/20">
+                    <summary class="flex justify-between items-center font-bold text-lg text-white list-none">
+                        Yeh videos bilkul free hain?
+                        <i class="fas fa-chevron-down text-cyan-500 group-open:rotate-180 transition-transform duration-300"></i>
+                    </summary>
+                    <div class="mt-4 text-gray-300 text-base leading-relaxed">
+                        Haan 100% free! Koi subscription ya payment nahi chahiye. Security education sabke liye accessible honi chahiye.
+                    </div>
+                </details>
+
+                <details class="glass rounded-2xl p-6 group cursor-pointer transition-all hover:shadow-cyan-500/20">
+                    <summary class="flex justify-between items-center font-bold text-lg text-white list-none">
+                        Beginner ke liye bhi suitable hai?
+                        <i class="fas fa-chevron-down text-cyan-500 group-open:rotate-180 transition-transform duration-300"></i>
+                    </summary>
+                    <div class="mt-4 text-gray-300 text-base leading-relaxed">
+                        Bilkul! "Basics" category se shuru karo — zero knowledge se advanced tak sab cover hota hai.
+                    </div>
+                </details>
+
+                <details class="glass rounded-2xl p-6 group cursor-pointer transition-all hover:shadow-cyan-500/20">
+                    <summary class="flex justify-between items-center font-bold text-lg text-white list-none">
+                        Videos download kar sakte hain?
+                        <i class="fas fa-chevron-down text-cyan-500 group-open:rotate-180 transition-transform duration-300"></i>
+                    </summary>
+                    <div class="mt-4 text-gray-300 text-base leading-relaxed">
+                        Direct download nahi hai (copyright ki wajah se), lekin YouTube Premium ya browser extensions se offline dekh sakte ho.
+                    </div>
+                </details>
+
+                <details class="glass rounded-2xl p-6 group cursor-pointer transition-all hover:shadow-cyan-500/20">
+                    <summary class="flex justify-between items-center font-bold text-lg text-white list-none">
+                        Naye videos kitni jaldi aate hain?
+                        <i class="fas fa-chevron-down text-cyan-500 group-open:rotate-180 transition-transform duration-300"></i>
+                    </summary>
+                    <div class="mt-4 text-gray-300 text-base leading-relaxed">
+                        Har mahine 2–4 naye videos add hote hain — latest threats, tools aur 2025-2026 updates ke saath.
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- New: Quick Share & Feedback Section -->
+    <section class="py-10 bg-gradient-to-b from-black to-[#05070a] border-t border-cyan-900/30">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-black uppercase tracking-tighter italic mb-10">
+                Share this Library & Give Feedback
+            </h2>
+            <p class="text-lg text-gray-400 mb-12 max-w-2xl mx-auto">
+                Apne doston ko cyber safe banane mein madad karo aur humein batao aapko kya improve karna chahiye.
+            </p>
+
+            <!-- Social Share Buttons -->
+            <div class="flex flex-wrap justify-center gap-6 mb-12">
+                <a href="#" class="group relative w-14 h-14 rounded-full border-2 border-gray-700 flex items-center justify-center text-gray-400 hover:text-white hover:border-cyan-500 transition-all duration-300 hover:scale-110 hover:shadow-cyan-500/30">
+                    <i class="fab fa-twitter text-2xl"></i>
+                    <span class="absolute -top-10 bg-cyan-600 text-white text-xs px-3 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity">Tweet</span>
+                </a>
+                <a href="#" class="group relative w-14 h-14 rounded-full border-2 border-gray-700 flex items-center justify-center text-gray-400 hover:text-white hover:border-blue-600 transition-all duration-300 hover:scale-110 hover:shadow-blue-500/30">
+                    <i class="fab fa-facebook-f text-2xl"></i>
+                    <span class="absolute -top-10 bg-blue-600 text-white text-xs px-3 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity">Share</span>
+                </a>
+                <a href="#" class="group relative w-14 h-14 rounded-full border-2 border-gray-700 flex items-center justify-center text-gray-400 hover:text-white hover:border-red-600 transition-all duration-300 hover:scale-110 hover:shadow-red-500/30">
+                    <i class="fab fa-linkedin-in text-2xl"></i>
+                    <span class="absolute -top-10 bg-red-600 text-white text-xs px-3 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity">LinkedIn</span>
+                </a>
+                <a href="#" class="group relative w-14 h-14 rounded-full border-2 border-gray-700 flex items-center justify-center text-gray-400 hover:text-white hover:border-green-600 transition-all duration-300 hover:scale-110 hover:shadow-green-500/30">
+                    <i class="fab fa-whatsapp text-2xl"></i>
+                    <span class="absolute -top-10 bg-green-600 text-white text-xs px-3 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity">WhatsApp</span>
+                </a>
+            </div>
+
+            <!-- Simple Feedback Form -->
+            <form class="max-w-2xl mx-auto glass p-8 rounded-3xl border border-cyan-500/20">
+                <textarea placeholder="Aapko kya improve karna chahiye? (Your suggestions...)" rows="4" class="w-full bg-black/60 border border-cyan-500/30 rounded-xl px-6 py-4 text-white placeholder-gray-500 focus:outline-none focus:border-cyan-400 transition-all resize-none"></textarea>
+                <button type="submit" class="mt-6 bg-cyan-600 hover:bg-cyan-500 text-black font-bold px-12 py-4 rounded-xl uppercase tracking-wider transition-all shadow-lg shadow-cyan-900/60">
+                    Submit Feedback
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Import -->
+    <div id="footer-placeholder"></div>
+
+ 
+<script>
+fetch('navbar.html')
+.then(r => r.text())
+.then(html => {
+  document.getElementById('navbar').innerHTML = html;
+
+  /* ========== ACTIVE LINK ========== */
+  let page = location.pathname.split('/').pop();
+  if(page === '' || page === '/') page = 'index.html';
+
+  document.querySelectorAll('.nav-link').forEach(link=>{
+    if(link.getAttribute('href') === page){
+      link.classList.add('active');
+    }
+  });
+
+  /* ========== THEME TOGGLE ========== */
+  const toggle = document.getElementById('themeToggle');
+
+  if(localStorage.getItem('theme') === 'light'){
+    document.body.classList.add('light');
+    toggle.checked = true;
+  }
+
+  toggle.addEventListener('change',()=>{
+    document.body.classList.toggle('light');
+    localStorage.setItem(
+      'theme',
+      toggle.checked ? 'light' : 'dark'
+    );
+  });
+});
+</script>
+
+</body>
+</html>

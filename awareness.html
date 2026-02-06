@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberGuard | Security Awareness</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="bg-black text-white">
+     <!-- Navbar yahan load hoga -->
+<div id="navbar"></div>
+
+    <div class="news-container" style="background: #111; color: #0f0; padding: 3px; font-family: 'Courier New', monospace; border: 1px solid #333;">
+        <span style="background: #f00; color: #fff; padding: 2px 8px; font-weight: bold; margin-right: 10px;">CYBER ALERTS:</span>
+        <marquee id="cyber-marquee" behavior="scroll" direction="left" scrollamount="6">
+            Loading latest worldwide cyber security alerts...
+        </marquee>
+    </div>
+
+    <!-- Hero Section for Introduction -->
+    <section class="relative min-h-screen bg-[#080a0f] border-b border-white/5 overflow-hidden">
+        <!-- Background Video - full cover, no black bars -->
+        <video 
+            autoplay 
+            muted 
+            loop 
+            playsinline 
+            class="absolute inset-0 w-full h-full object-cover z-0"
+        >
+            <source src="awareness.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <div class="absolute inset-0 bg-black/40 z-10"></div>
+
+        <div class="absolute top-0 right-0 w-[100px] h-[300px] bg-cyan-500/5 rounded-full filter blur-[120px] z-20"></div>
+
+        <div class="container mx-auto px-6 relative z-30 text-center pt-32 md:pt-40 pb-20">
+            <h1 class="text-3xl md:text-4xl font-black mb-6 uppercase italic tracking-tighter text-white">
+                Cyber <span class="text-cyan-500">Awareness Hub</span>
+            </h1>
+            <p class="text-gray-400 mb-10 text-lg leading-relaxed max-w-3xl mx-auto">
+                Stay informed about the latest cyber threats and learn how to protect yourself. Every 39 seconds, a cyber attack occurs – knowledge is your best defense.
+            </p>
+            <a href="#threats" class="px-10 py-4 bg-cyan-500 text-black font-bold rounded-xl hover:bg-cyan-400 transition-all uppercase tracking-wider inline-block">
+                Explore Threats
+            </a>
+        </div>
+    </section>
+<!-- Attacks Section -->
+<section id="threats" class="py-12 md:py-16 bg-[#0a0d12] text-gray-300">
+    <div class="container mx-auto px-4 sm:px-6">
+        <h2 class="text-center text-lg md:text-xl font-medium text-cyan-400 mb-8 md:mb-12 tracking-wide uppercase">
+            Cyber Threats
+        </h2>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+            <!-- 1. Phishing -->
+            <div class="attack-card cursor-pointer bg-black/50 border border-cyan-900/30 rounded-xl p-6 text-center hover:shadow-[0_0_20px_rgba(0,212,255,0.3)] transition-all duration-300" data-threat="phishing">
+                <div class="w-12 h-12 mx-auto mb-4 flex items-center justify-center text-cyan-400 text-3xl">
+                    <i class="fas fa-fish"></i>
+                </div>
+                <h3 class="text-xl font-black text-white mb-2">Phishing</h3>
+                <p class="text-sm text-gray-500">Deceptive emails or messages to trick you into revealing sensitive information.</p>
+            </div>
+            
+            <!-- 2. Malware -->
+            <div class="attack-card cursor-pointer bg-black/50 border border-cyan-900/30 rounded-xl p-6 text-center hover:shadow-[0_0_20px_rgba(0,212,255,0.3)] transition-all duration-300" data-threat="malware">
+                <div class="w-12 h-12 mx-auto mb-4 flex items-center justify-center text-cyan-400 text-3xl">
+                    <i class="fas fa-bug"></i>
+                </div>
+                <h3 class="text-xl font-black text-white mb-2">Malware</h3>
+                <p class="text-sm text-gray-500">Malicious software designed to damage or disable computers.</p>
+            </div>
+            
+            <!-- 3. Ransomware -->
+            <div class="attack-card cursor-pointer bg-black/50 border border-cyan-900/30 rounded-xl p-6 text-center hover:shadow-[0_0_20px_rgba(0,212,255,0.3)] transition-all duration-300" data-threat="ransomware">
+                <div class="w-12 h-12 mx-auto mb-4 flex items-center justify-center text-cyan-400 text-3xl">
+                    <i class="fas fa-lock"></i>
+                </div>
+                <h3 class="text-xl font-black text-white mb-2">Ransomware</h3>
+                <p class="text-sm text-gray-500">Encrypts your files and demands ransom for access.</p>
+            </div>
+            
+            <!-- 4. Social Engineering -->
+            <div class="attack-card cursor-pointer bg-black/50 border border-cyan-900/30 rounded-xl p-6 text-center hover:shadow-[0_0_20px_rgba(0,212,255,0.3)] transition-all duration-300" data-threat="social-engineering">
+                <div class="w-12 h-12 mx-auto mb-4 flex items-center justify-center text-cyan-400 text-3xl">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h3 class="text-xl font-black text-white mb-2">Social Engineering</h3>
+                <p class="text-sm text-gray-500">Manipulating people to divulge confidential information.</p>
+            </div>
+
+            <!-- 5. DDoS Attacks (New) -->
+            <div class="attack-card cursor-pointer bg-black/50 border border-cyan-900/30 rounded-xl p-6 text-center hover:shadow-[0_0_20px_rgba(0,212,255,0.3)] transition-all duration-300" data-threat="ddos">
+                <div class="w-12 h-12 mx-auto mb-4 flex items-center justify-center text-cyan-400 text-3xl">
+                    <i class="fas fa-network-wired"></i>
+                </div>
+                <h3 class="text-xl font-black text-white mb-2">DDoS Attacks</h3>
+                <p class="text-sm text-gray-500">Overwhelms websites or servers with traffic to make them unavailable.</p>
+            </div>
+            
+            <!-- 6. Man-in-the-Middle -->
+            <div class="attack-card cursor-pointer bg-black/50 border border-cyan-900/30 rounded-xl p-6 text-center hover:shadow-[0_0_20px_rgba(0,212,255,0.3)] transition-all duration-300" data-threat="mitm">
+                <div class="w-12 h-12 mx-auto mb-4 flex items-center justify-center text-cyan-400 text-3xl">
+                    <i class="fas fa-user-secret"></i>
+                </div>
+                <h3 class="text-xl font-black text-white mb-2">Man-in-the-Middle</h3>
+                <p class="text-sm text-gray-500">Intercepts communication between two parties to steal data.</p>
+            </div>
+            
+            <!-- 7. Zero-Day Exploits -->
+            <div class="attack-card cursor-pointer bg-black/50 border border-cyan-900/30 rounded-xl p-6 text-center hover:shadow-[0_0_20px_rgba(0,212,255,0.3)] transition-all duration-300" data-threat="zero-day">
+                <div class="w-12 h-12 mx-auto mb-4 flex items-center justify-center text-cyan-400 text-3xl">
+                    <i class="fas fa-bomb"></i>
+                </div>
+                <h3 class="text-xl font-black text-white mb-2">Zero-Day Exploits</h3>
+                <p class="text-sm text-gray-500">Attacks using unknown vulnerabilities before patches exist.</p>
+            </div>
+            
+            <!-- 8. Credential Stuffing -->
+            <div class="attack-card cursor-pointer bg-black/50 border border-cyan-900/30 rounded-xl p-6 text-center hover:shadow-[0_0_20px_rgba(0,212,255,0.3)] transition-all duration-300" data-threat="credential-stuffing">
+                <div class="w-12 h-12 mx-auto mb-4 flex items-center justify-center text-cyan-400 text-3xl">
+                    <i class="fas fa-key"></i>
+                </div>
+                <h3 class="text-xl font-black text-white mb-2">Credential Stuffing</h3>
+                <p class="text-sm text-gray-500">Uses stolen username/password pairs to breach accounts.</p>
+            </div>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+    <!-- Purane 8 cards yahan rahenge (jo pehle the) -->
+
+    <!-- 9. Supply Chain Attacks (New) -->
+    <div class="attack-card cursor-pointer bg-black/50 border border-cyan-900/30 rounded-xl p-6 text-center hover:shadow-[0_0_20px_rgba(0,212,255,0.3)] transition-all duration-300" data-threat="supply-chain">
+        <div class="w-12 h-12 mx-auto mb-4 flex items-center justify-center text-cyan-400 text-3xl">
+            <i class="fas fa-link"></i>
+        </div>
+        <h3 class="text-xl font-black text-white mb-2">Supply Chain Attacks</h3>
+        <p class="text-sm text-gray-500">Compromising a vendor or software provider to attack many organizations at once.</p>
+    </div>
+
+    <!-- 10. AI-Powered Attacks (New) -->
+    <div class="attack-card cursor-pointer bg-black/50 border border-cyan-900/30 rounded-xl p-6 text-center hover:shadow-[0_0_20px_rgba(0,212,255,0.3)] transition-all duration-300" data-threat="ai-powered">
+        <div class="w-12 h-12 mx-auto mb-4 flex items-center justify-center text-cyan-400 text-3xl">
+            <i class="fas fa-brain"></i>
+        </div>
+        <h3 class="text-xl font-black text-white mb-2">AI-Powered Attacks</h3>
+        <p class="text-sm text-gray-500">Using AI to create advanced phishing, deepfakes, or autonomous malware.</p>
+    </div>
+
+    <!-- 11. Deepfake Attacks (New) -->
+    <div class="attack-card cursor-pointer bg-black/50 border border-cyan-900/30 rounded-xl p-6 text-center hover:shadow-[0_0_20px_rgba(0,212,255,0.3)] transition-all duration-300" data-threat="deepfake">
+        <div class="w-12 h-12 mx-auto mb-4 flex items-center justify-center text-cyan-400 text-3xl">
+            <i class="fas fa-video"></i>
+        </div>
+        <h3 class="text-xl font-black text-white mb-2">Deepfake Attacks</h3>
+        <p class="text-sm text-gray-500">Fake videos or audio impersonating real people to trick victims.</p>
+    </div>
+
+    <!-- 12. Infostealers (New) -->
+    <div class="attack-card cursor-pointer bg-black/50 border border-cyan-900/30 rounded-xl p-6 text-center hover:shadow-[0_0_20px_rgba(0,212,255,0.3)] transition-all duration-300" data-threat="infostealer">
+        <div class="w-12 h-12 mx-auto mb-4 flex items-center justify-center text-cyan-400 text-3xl">
+            <i class="fas fa-database"></i>
+        </div>
+        <h3 class="text-xl font-black text-white mb-2">Infostealers</h3>
+        <p class="text-sm text-gray-500">Malware that steals saved passwords, cookies, crypto wallets, and more.</p>
+    </div>
+</div>
+    </div>
+</section>
+    <!-- Modal (sirf ek baar rakha) -->
+    <div id="attack-modal" class="fixed inset-0 z-[10001] flex items-center justify-center bg-black/70 backdrop-blur-sm hidden transition-opacity duration-300">
+        <div class="bg-[#0a0d12] border border-cyan-900/50 rounded-xl max-w-2xl w-full mx-4 p-6 md:p-8 relative max-h-[90vh] overflow-y-auto">
+            <button id="close-modal" class="absolute top-4 right-4 text-gray-400 hover:text-cyan-400 text-2xl">
+                <i class="fas fa-times"></i>
+            </button>
+            
+            <h2 id="modal-title" class="text-2xl md:text-3xl font-black text-cyan-400 mb-4"></h2>
+            
+            <div id="modal-content" class="space-y-6 text-gray-300">
+                <div>
+                    <h3 class="text-lg font-bold text-white mb-2">What is it?</h3>
+                    <p id="modal-definition"></p>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold text-white mb-2">How does it attack?</h3>
+                    <p id="modal-how"></p>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold text-white mb-2">How to protect yourself?</h3>
+                    <ul id="modal-protection" class="list-disc pl-5 space-y-2"></ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold text-white mb-2">Watch Educational Video</h3>
+                    <div id="modal-video" class="aspect-video bg-black/50 rounded-lg overflow-hidden"></div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold text-white mb-2">See More</h3>
+                    <p id="modal-more"></p>
+                    <a id="modal-more-link" href="#" class="text-cyan-400 hover:underline">Read Detailed Article</a>
+                </div>
+            </div>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+    <!-- Purane 8 cards yahan rahenge (jo pehle the) -->
+
+    <!-- 9. Supply Chain Attacks (New) -->
+    <div class="attack-card cursor-pointer bg-black/50 border border-cyan-900/30 rounded-xl p-6 text-center hover:shadow-[0_0_20px_rgba(0,212,255,0.3)] transition-all duration-300" data-threat="supply-chain">
+        <div class="w-12 h-12 mx-auto mb-4 flex items-center justify-center text-cyan-400 text-3xl">
+            <i class="fas fa-link"></i>
+        </div>
+        <h3 class="text-xl font-black text-white mb-2">Supply Chain Attacks</h3>
+        <p class="text-sm text-gray-500">Compromising a vendor or software provider to attack many organizations at once.</p>
+    </div>
+
+    <!-- 10. AI-Powered Attacks (New) -->
+    <div class="attack-card cursor-pointer bg-black/50 border border-cyan-900/30 rounded-xl p-6 text-center hover:shadow-[0_0_20px_rgba(0,212,255,0.3)] transition-all duration-300" data-threat="ai-powered">
+        <div class="w-12 h-12 mx-auto mb-4 flex items-center justify-center text-cyan-400 text-3xl">
+            <i class="fas fa-brain"></i>
+        </div>
+        <h3 class="text-xl font-black text-white mb-2">AI-Powered Attacks</h3>
+        <p class="text-sm text-gray-500">Using AI to create advanced phishing, deepfakes, or autonomous malware.</p>
+    </div>
+
+    <!-- 11. Deepfake Attacks (New) -->
+    <div class="attack-card cursor-pointer bg-black/50 border border-cyan-900/30 rounded-xl p-6 text-center hover:shadow-[0_0_20px_rgba(0,212,255,0.3)] transition-all duration-300" data-threat="deepfake">
+        <div class="w-12 h-12 mx-auto mb-4 flex items-center justify-center text-cyan-400 text-3xl">
+            <i class="fas fa-video"></i>
+        </div>
+        <h3 class="text-xl font-black text-white mb-2">Deepfake Attacks</h3>
+        <p class="text-sm text-gray-500">Fake videos or audio impersonating real people to trick victims.</p>
+    </div>
+
+    <!-- 12. Infostealers (New) -->
+    <div class="attack-card cursor-pointer bg-black/50 border border-cyan-900/30 rounded-xl p-6 text-center hover:shadow-[0_0_20px_rgba(0,212,255,0.3)] transition-all duration-300" data-threat="infostealer">
+        <div class="w-12 h-12 mx-auto mb-4 flex items-center justify-center text-cyan-400 text-3xl">
+            <i class="fas fa-database"></i>
+        </div>
+        <h3 class="text-xl font-black text-white mb-2">Infostealers</h3>
+        <p class="text-sm text-gray-500">Malware that steals saved passwords, cookies, crypto wallets, and more.</p>
+    </div>
+</div>  
+    </div>
+   <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <!-- ================================================== -->
+    <!-- Yeh script add karo – iske bina click kaam nahi karega -->
+    <!-- ================================================== -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const cards = document.querySelectorAll('.attack-card');
+            const modal = document.getElementById('attack-modal');
+            const closeBtn = document.getElementById('close-modal');
+
+            if (!modal || cards.length === 0) {
+                console.error("Modal ya cards nahi mil rahe – check karo HTML");
+                return;
+            }
+
+            // Threat data (har card ke liye information)
+         // Threat data (har card ke liye information)
+const threats = {
+    "phishing": {
+        title: "Phishing",
+        definition: "Phishing ek aisa cyber attack hai jisme attackers fake emails, SMS, ya websites banate hain jo asli lagte hain taake aap apni personal ya financial information (password, card details, etc.) share kar dein.",
+        how: "Attackers usually urgent ya scary message bhejte hain jaise 'Aapka account lock ho gaya hai' ya 'Prize jeeta hai'. Link click karne pe fake login page khulta hai ya malware download ho jata hai. Aaj kal AI se bohot realistic phishing banta hai.",
+        protection: [
+            "Kisi bhi unexpected email/SMS ke link pe click na karein.",
+            "Sender ka email address carefully check karein (name nahi, pura address).",
+            "Direct company ki official website pe jaake login karein.",
+            "Phishing-resistant 2FA (jaise hardware key ya authenticator app) use karein.",
+            "Suspicious message ko report karein aur delete kar dein."
+        ],
+        video: "https://www.youtube.com/embed/uqGGKxMQVBo", // Working embed - Phishing Attack Explained in Hindi with examples
+        more: "Phishing ke latest examples aur advanced protection tips ke liye yeh padhein.",
+        moreLink: "#phishing-details"
+    },
+
+    "malware": {
+        title: "Malware",
+        definition: "Malware (malicious software) woh program hai jo aapke computer ya phone ko nuksan pahunchane, data churanne ya control karne ke liye banaya jata hai.",
+        how: "Yeh infected email attachments, fake software downloads, malicious websites, ya USB se aata hai. Ek baar system mein ghusne ke baad background mein chupke se kaam karta hai.",
+        protection: [
+            "Reputable antivirus/antimalware software install karein aur update rakhein.",
+            "Unknown sources se kabhi bhi file ya app download na karein.",
+            "Operating system aur apps hamesha latest version mein rakhein.",
+            "Regular full system scan chalayein."
+        ],
+        video: "https://www.youtube.com/embed/4BjmeaGEWJ4", // Working - Malware kya hai explained in Hindi
+        more: "Malware ke types aur real-world attacks ke bare mein jaan'ne ke liye.",
+        moreLink: "#malware-details"
+    },
+
+    "ransomware": {
+        title: "Ransomware",
+        definition: "Ransomware aapke important files ko encrypt (lock) kar deta hai aur unko unlock karne ke liye paisa (ransom) maangta hai.",
+        how: "Phishing email, weak RDP, ya software vulnerability se entry milti hai. Phir woh files lock karta hai aur ransom note dikhata hai.",
+        protection: [
+            "Regular offline backups rakhein (3-2-1 rule best hai).",
+            "Ransomware protection wala antivirus use karein.",
+            "Unknown links ya attachments se door rahein.",
+            "Kabhi bhi ransom na dein – yeh criminals ko aur encourage karta hai."
+        ],
+        video: "https://www.youtube.com/embed/h6ixITU-hE4", // Working - Ransomware Explained in Hindi
+        more: "Ransomware recovery aur prevention ke latest tips.",
+        moreLink: "#ransomware-details"
+    },
+
+    "social-engineering": {
+        title: "Social Engineering",
+        definition: "Social engineering technical hack nahi, balki insaanon ko dhoka dekar information nikalne ka tareeqa hai.",
+        how: "Attackers fake identity banate hain (boss, IT support, bank wala) aur pressure ya trust create karke password ya access maangte hain. Ab deepfake voice/video bhi use ho raha hai.",
+        protection: [
+            "Kisi bhi urgent request ko doosre tareeke se verify karein (phone call, personal milna).",
+            "Sensitive information kabhi phone/email pe share na karein.",
+            "Family aur team ke saath secret code word rakhein.",
+            "Awareness training lete rahein."
+        ],
+        video: "https://www.youtube.com/embed/_6dIP5mQTa8", // Working - Social Engineering Most Dangerous Attack in Hindi
+        more: "Social engineering ke real cases aur kaise bachein.",
+        moreLink: "#social-engineering-details"
+    },
+
+    "ddos": {
+        title: "DDoS Attacks",
+        definition: "Distributed Denial of Service (DDoS) attack mein hazaron ya lakhon infected devices (botnet) ek website ya server pe itna traffic bhejte hain ki woh down ho jata hai aur real users access nahi kar paate.",
+        how: "Attackers botnets (mirai, etc.) control karte hain aur ek target (website, game server, bank) pe flood karte hain. UDP flood, HTTP flood, SYN flood common types hain.",
+        protection: [
+            "Website ke liye Cloudflare, Akamai ya AWS Shield jaise DDoS protection service use karein.",
+            "Personal level pe unnecessary public exposure kam rakhein.",
+            "Router/firewall mein rate limiting enable karein.",
+            "ISP se DDoS mitigation plan rakhein agar high-risk ho."
+        ],
+        video: "https://www.youtube.com/embed/X87GEoXwJOg", // Working - DDoS Attacks Explained in Hindi
+        more: "DDoS attacks ke latest examples aur mitigation techniques.",
+        moreLink: "#ddos-details"
+    },
+
+    "mitm": {
+        title: "Man-in-the-Middle (MitM)",
+        definition: "Man-in-the-Middle attack mein attacker do parties (user aur server) ke beech mein khud ko beech mein daal deta hai aur communication ko sunta ya badalta hai.",
+        how: "Fake Wi-Fi hotspots, ARP spoofing, SSL stripping, ya compromised routers se hota hai. Attacker passwords, cookies, ya sensitive data chura leta hai.",
+        protection: [
+            "Hamesha HTTPS use karein (padlock icon check karein).",
+            "Public Wi-Fi pe VPN zaroor chalayein.",
+            "Certificate warnings ko kabhi ignore na karein.",
+            "DNS over HTTPS (DoH) enable karein browser mein."
+        ],
+        video: "https://www.youtube.com/embed/TSJov9XcYYk", // Yeh purana tha aur working dikha raha hai (agar na chale to batao)
+        more: "Man-in-the-Middle attacks ko kaise pehchanein aur rokein.",
+        moreLink: "#mitm-details"
+    },
+
+    "zero-day": {
+        title: "Zero-Day Exploits",
+        definition: "Zero-day attack woh hota hai jab attacker software mein unknown vulnerability (zero-day) ka fayda uthata hai, jiska abhi tak patch nahi aaya hota.",
+        how: "Vendors ko pata nahi hota vulnerability ka, isliye 0 days hote hain patch ke. Hackers inko black market pe bechte hain ya khud use karte hain.",
+        protection: [
+            "Software aur OS ko hamesha auto-update rakhein.",
+            "Endpoint Detection & Response (EDR) tools use karein.",
+            "Browser extensions aur unnecessary software minimize karein.",
+            "High-risk activities ke liye virtual machine ya sandbox use karein."
+        ],
+        video: "https://www.youtube.com/embed/_4ffNj003-U", // Working embed
+        more: "Recent zero-day attacks aur unka impact.",
+        moreLink: "#zero-day-details"
+    },
+
+        "credential-stuffing": {
+        title: "Credential Stuffing",
+        definition: "Credential stuffing mein attackers previously leaked username/password pairs ko different websites pe automatically try karte hain taake logins milein.",
+        how: "Breach data (LinkedIn, Adobe leaks) se lists lete hain aur bots se thousands accounts try karte hain. Agar kisi site pe password same hai to account hack ho jata hai.",
+        protection: [
+            "Har account ke liye unique strong password use karein.",
+            "Password manager (Bitwarden, 1Password) zaroor use karein.",
+            "Have I Been Pwned? pe apna email check karte rahein.",
+            "Everywhere phishing-resistant MFA enable karein."
+        ],
+        video: "https://www.youtube.com/embed/4iRsxngSZOY", // [HINDI] Authentication Vulnerabilities including Credential Stuffing Explained
+        more: "Credential stuffing se bachne ke practical tareeke.",
+        moreLink: "#credential-stuffing-details"
+    },
+
+    "supply-chain": {
+        title: "Supply Chain Attacks",
+        definition: "Supply chain attack mein attacker ek trusted vendor, software ya update ko compromise karta hai taake uske through hazaron customers tak pahunch sake.",
+        how: "Malicious code ko legitimate software mein daal diya jata hai (jaise update ya library). Jab customer update install karta hai, attacker ko access mil jata hai (SolarWinds, MOVEit jaisa).",
+        protection: [
+            "Third-party vendors ki security posture check karein.",
+            "Software updates ko verify karein (digital signatures).",
+            "SBOM (Software Bill of Materials) maangein vendors se.",
+            "Network segmentation aur least privilege access use karein."
+        ],
+        video: "https://www.youtube.com/embed/cSFJhOqSrRw", // [HINDI] Most Dangerous Cyber Attacks | Supply Chain Security Explained
+        more: "Famous supply chain attacks aur un se bachne ke tareeke.",
+        moreLink: "#supply-chain-details"
+    },
+
+    "ai-powered": {
+        title: "AI-Powered Attacks",
+        definition: "AI-powered attacks mein attackers generative AI ka istemaal karte hain bohot zyada personalized aur convincing attacks banane ke liye.",
+        how: "AI se perfect phishing emails, deepfake voices/videos, automated malware variants, ya prompt injection attacks bante hain. Ek attacker ab hazaron targets ko simultaneously attack kar sakta hai.",
+        protection: [
+            "AI detection wale email filters aur security tools use karein.",
+            "Urgent requests ko hamesha second channel se verify karein.",
+            "Voice/video calls mein live verification (specific action maangein).",
+            "Generative AI tools ke output pe blindly bharosa na karein."
+        ],
+        video: "https://www.youtube.com/embed/l_d9olA2Uz8", // Hackers' biggest weapon is coming - AI Powered Hacking Explained in Hindi
+        more: "AI ka cybercrime mein badhta istemaal aur countermeasures.",
+        moreLink: "#ai-powered-details"
+    },
+
+    "deepfake": {
+        title: "Deepfake Attacks",
+        definition: "Deepfake mein AI se fake video ya audio banaya jata hai jo real person ko imitate karta hai taake logon ko dhoka diya ja sake.",
+        how: "Sirf kuch seconds ka real audio/video feed karne se AI naye clips bana deta hai. CEO voice cloning se fraud, fake video calls se scams, ya misinformation failaya jata hai.",
+        protection: [
+            "Video call mein live proof maangein (haath hilana, specific cheez dikhana).",
+            "Family/business ke saath secret verification phrase rakhein.",
+            "Deepfake detection tools ya browser extensions use karein.",
+            "Unexpected video/audio requests pe pause karein aur verify karein."
+        ],
+        video: "https://www.youtube.com/embed/aKfBxWZmIPI", // Deepfake Kya Hai? आवाज़ आपकी, चेहरा आपका – Explained in Hindi
+        more: "Deepfake technology aur uske real-world dangers.",
+        moreLink: "#deepfake-details"
+    },
+
+    "infostealer": {
+        title: "Infostealers",
+        definition: "Infostealer malware specially passwords, cookies, autofill data, crypto wallets, aur browser sessions churanne ke liye banaya jata hai.",
+        how: "Yeh usually pirated software, cracked games, ya malicious ads se aata hai. Data chura kar dark web pe bech deta hai ya credential stuffing ke liye use hota hai.",
+        protection: [
+            "Pirated/cracked software bilkul na chalayein.",
+            "Antivirus with behavior monitoring use karein.",
+            "Browser mein password save na karein – password manager use karein.",
+            "Regularly Have I Been Pwned check karein aur passwords change karein."
+        ],
+        video: "https://www.youtube.com/embed/7YvAYIJSSZY", // Infostealer Malware Explained (working aur relevant)
+        more: "Infostealers ka rise aur personal protection tips.",
+        moreLink: "#infostealer-details"
+    }
+};
+            // Har card pe click event
+            cards.forEach(card => {
+                card.addEventListener('click', () => {
+                    const threatKey = card.getAttribute('data-threat');
+                    const data = threats[threatKey];
+
+                    if (!data) {
+                        console.error("Data nahi mila is threat ke liye: " + threatKey);
+                        return;
+                    }
+
+                    // Modal mein data daal do
+                    document.getElementById('modal-title').textContent = data.title;
+                    document.getElementById('modal-definition').textContent = data.definition;
+                    document.getElementById('modal-how').textContent = data.how;
+
+                    // Protection list
+                    const protList = document.getElementById('modal-protection');
+                    protList.innerHTML = '';
+                    data.protection.forEach(item => {
+                        const li = document.createElement('li');
+                        li.textContent = item;
+                        protList.appendChild(li);
+                    });
+
+                    // Video embed
+                    document.getElementById('modal-video').innerHTML = 
+                        `<iframe class="w-full h-full" src="${data.video}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+
+                    // See more
+                    document.getElementById('modal-more').textContent = data.more;
+                    document.getElementById('modal-more-link').href = data.moreLink;
+
+                    // Modal dikhao
+                    modal.classList.remove('hidden');
+                    modal.classList.add('flex');
+                });
+            });
+
+            // Close button
+            closeBtn.addEventListener('click', () => {
+                modal.classList.add('hidden');
+                modal.classList.remove('flex');
+            });
+
+            // Modal ke bahar click karne pe bhi band ho
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) {
+                    modal.classList.add('hidden');
+                    modal.classList.remove('flex');
+                }
+            });
+        });
+        
+        // Video section mein yeh use karo (iframe ke badle)
+document.getElementById('modal-video').innerHTML = 
+    `<div class="text-center">
+        <p class="mb-2">Video dekho (YouTube pe khulega):</p>
+        <a href="https://www.youtube.com/watch?v=qdpReVgpQhc" 
+           target="_blank" 
+           class="inline-block px-6 py-3 bg-red-600 text-white font-bold rounded-lg hover:bg-red-700 transition">
+           Watch on YouTube → Phishing Explained
+        </a>
+     </div>`;
+    </script>
+
+
+
+<script>
+fetch('navbar.html')
+.then(r => r.text())
+.then(html => {
+  document.getElementById('navbar').innerHTML = html;
+
+  /* ========== ACTIVE LINK ========== */
+  let page = location.pathname.split('/').pop();
+  if(page === '' || page === '/') page = 'index.html';
+
+  document.querySelectorAll('.nav-link').forEach(link=>{
+    if(link.getAttribute('href') === page){
+      link.classList.add('active');
+    }
+  });
+
+  /* ========== THEME TOGGLE ========== */
+  const toggle = document.getElementById('themeToggle');
+
+  if(localStorage.getItem('theme') === 'light'){
+    document.body.classList.add('light');
+    toggle.checked = true;
+  }
+
+  toggle.addEventListener('change',()=>{
+    document.body.classList.toggle('light');
+    localStorage.setItem(
+      'theme',
+      toggle.checked ? 'light' : 'dark'
+    );
+  });
+});
+</script>
+
+<script src="script.js"></script>
+</body>
+</html>

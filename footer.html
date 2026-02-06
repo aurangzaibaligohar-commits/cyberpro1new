@@ -1,0 +1,91 @@
+<footer class="bg-[#05070a] border-t border-cyan-900/30 pt-16 pb-8">
+    <div class="container mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 xl:gap-12 mb-16">
+            
+            <!-- Column 1: About -->
+            <div class="space-y-6">
+                <div class="flex items-center gap-2">
+                    <div class="w-10 h-10 bg-cyan-500 rounded-lg flex items-center justify-center shadow-[0_0_15px_rgba(0,212,255,0.5)]">
+                        <i class="fas fa-user-shield text-black text-xl"></i>
+                    </div>
+                    <span class="text-2xl font-black tracking-tighter text-white">CYBER<span class="text-cyan-500">GUARD</span></span>
+                </div>
+                <p class="text-gray-400 text-sm leading-relaxed">
+                    Leading the way in digital defense and security awareness. Empowering individuals and organizations to navigate the digital world safely.
+                </p>
+            </div>
+
+            <!-- Column 2: Navigation -->
+            <div>
+                <h4 class="text-white font-bold mb-6 uppercase tracking-widest text-sm">Navigation</h4>
+                <ul class="space-y-4 text-gray-400 text-sm">
+                    <li><a href="index.html" class="hover:text-cyan-500 transition-colors flex items-center gap-2"><i class="fas fa-chevron-right text-[10px]"></i> Home</a></li>
+                    <li><a href="awareness.html" class="hover:text-cyan-500 transition-colors flex items-center gap-2"><i class="fas fa-chevron-right text-[10px]"></i> Security Awareness</a></li>
+                    <li><a href="tools.html" class="hover:text-cyan-500 transition-colors flex items-center gap-2"><i class="fas fa-chevron-right text-[10px]"></i> Analysis Tools</a></li>
+                    <li><a href="videos.html" class="hover:text-cyan-500 transition-colors flex items-center gap-2"><i class="fas fa-chevron-right text-[10px]"></i> Videos</a></li>
+                    <li><a href="contact_us.html" class="hover:text-cyan-500 transition-colors flex items-center gap-2"><i class="fas fa-chevron-right text-[10px]"></i> Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 3: Resources -->
+            <div>
+                <h4 class="text-white font-bold mb-6 uppercase tracking-widest text-sm">Resources</h4>
+                <ul class="space-y-4 text-gray-400 text-sm">
+                    <li><a href="#" class="hover:text-cyan-500 transition-colors flex items-center gap-2"><i class="fas fa-book text-[10px]"></i> Threat Encyclopedia</a></li>
+                    <li><a href="#" class="hover:text-cyan-500 transition-colors flex items-center gap-2"><i class="fas fa-shield-virus text-[10px]"></i> Malware Database</a></li>
+                    <li><a href="#" class="hover:text-cyan-500 transition-colors flex items-center gap-2"><i class="fas fa-file-pdf text-[10px]"></i> Security Checklists</a></li>
+                    <li><a href="#" class="hover:text-cyan-500 transition-colors flex items-center gap-2"><i class="fas fa-rss text-[10px]"></i> Security Blog</a></li>
+                    <li><a href="#" class="hover:text-cyan-500 transition-colors flex items-center gap-2"><i class="fas fa-graduation-cap text-[10px]"></i> Certifications</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 4: Stay Connected (Yahan paste kiya gaya) -->
+            <div class="space-y-6">
+                <h4 class="text-white font-bold mb-4 uppercase tracking-widest text-sm">Stay Connected</h4>
+                <div class="flex gap-4 flex-wrap">
+                    <!-- LinkedIn -->
+                    <a href="#" class="group relative w-10 h-10 rounded-full border border-gray-800 flex items-center justify-center text-gray-400 transition-all duration-300 hover:border-[#0A66C2] hover:scale-110 hover:shadow-[0_0_15px_rgba(10,102,194,0.5)]">
+                        <i class="fab fa-linkedin-in"></i>
+                        <span class="absolute -top-8 left-1/2 -translate-x-1/2 bg-[#0A66C2] text-white text-[10px] px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">LinkedIn</span>
+                    </a>
+                    
+                    <!-- Twitter/X -->
+                    <a href="#" class="group relative w-10 h-10 rounded-full border border-gray-800 flex items-center justify-center text-gray-400 transition-all duration-300 hover:border-[#1DA1F2] hover:scale-110 hover:shadow-[0_0_15px_rgba(29,161,242,0.5)]">
+                        <i class="fab fa-twitter"></i>
+                        <span class="absolute -top-8 left-1/2 -translate-x-1/2 bg-[#1DA1F2] text-white text-[10px] px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">Twitter</span>
+                    </a>
+                    
+                    <!-- GitHub -->
+                    <a href="#" class="group relative w-10 h-10 rounded-full border border-gray-800 flex items-center justify-center text-gray-400 transition-all duration-300 hover:border-[#171515] hover:scale-110 hover:shadow-[0_0_15px_rgba(23,21,21,0.5)]">
+                        <i class="fab fa-github"></i>
+                        <span class="absolute -top-8 left-1/2 -translate-x-1/2 bg-[#171515] text-white text-[10px] px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">GitHub</span>
+                    </a>
+                    
+                    <!-- YouTube -->
+                    <a href="#" class="group relative w-10 h-10 rounded-full border border-gray-800 flex items-center justify-center text-gray-400 transition-all duration-300 hover:border-[#FF0000] hover:scale-110 hover:shadow-[0_0_15px_rgba(255,0,0,0.5)]">
+                        <i class="fab fa-youtube"></i>
+                        <span class="absolute -top-8 left-1/2 -translate-x-1/2 bg-[#FF0000] text-white text-[10px] px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">YouTube</span>
+                    </a>
+                    
+                    <!-- Facebook -->
+                    <a href="#" class="group relative w-10 h-10 rounded-full border border-gray-800 flex items-center justify-center text-gray-400 transition-all duration-300 hover:border-[#1877F2] hover:scale-110 hover:shadow-[0_0_15px_rgba(24,119,242,0.5)]">
+                        <i class="fab fa-facebook-f"></i>
+                        <span class="absolute -top-8 left-1/2 -translate-x-1/2 bg-[#1877F2] text-white text-[10px] px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">Facebook</span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="pt-8 border-t border-gray-900 flex flex-col md:flex-row justify-between items-center gap-4">
+            <p class="text-gray-500 text-xs text-center md:text-left">
+                © 2026 CyberGuard Portal. All Rights Reserved. Designed for Security Education.
+            </p>
+            <div class="flex gap-6 text-xs text-gray-500">
+                <a href="#" class="hover:text-cyan-500">Privacy Policy</a>
+                <a href="#" class="hover:text-cyan-500">Terms of Service</a>
+                <a href="#" class="hover:text-cyan-500">Cookie Settings</a>
+            </div>
+        </div>
+    </div>
+</footer>

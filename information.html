@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ur">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article & Information Page</title>
+   <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    
+  
+</head>
+<body>
+<!-- Navbar Placeholder -->
+    <div id="navbar-placeholder" class="min-h-[80px]"></div>
+   
+    <header>
+        <h1>Mera Article aur Information</h1>
+    </header>
+<section class="py-1- bg-black/40">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-black mb-16 text-center uppercase tracking-tighter italic">
+                World Wide <span class="text-cyan-500">Cyber Security Articles's</span>
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                <div class="glass p-8 rounded-2xl border-l-4 border-cyan-500 hover:bg-cyan-500/5 transition-all group">
+                    <div class="text-cyan-500 text-3xl font-black mb-4 group-hover:scale-110 transition">01.</div>
+                    <h4 class="text-xl font-bold mb-2 text-white">Global Cost</h4>
+                    <p class="text-sm text-gray-500 leading-relaxed">Cybersecurity products par global spending $520 billion se tajawuz kar gayi hai</p>
+                </div>
+
+                <div class="glass p-8 rounded-2xl border-l-4 border-white hover:bg-white/5 transition-all group">
+                    <div class="text-white text-3xl font-black mb-4 group-hover:scale-110 transition">02.</div>
+                    <h4 class="text-xl font-bold mb-2 text-white">Spending</h4>
+                    <p class="text-sm text-gray-500 leading-relaxed">"Distributing apps through unofficial third-party platforms that serve as carriers for Trojan horse malware.</p>
+                </div>
+
+                <div class="glass p-8 rounded-2xl border-l-4 border-cyan-500 hover:bg-cyan-500/5 transition-all group">
+                    <div class="text-cyan-500 text-3xl font-black mb-4 group-hover:scale-110 transition">03.</div>
+                    <h4 class="text-xl font-bold mb-2 text-white">AI Impact</h4>
+                    <p class="text-sm text-gray-500 leading-relaxed">94% experts ka manna hai ke AI is waqt cyber security ka sabse bada "game changer" hai</p>
+                </div>
+
+                <div class="glass p-8 rounded-2xl border-l-4 border-white hover:bg-white/5 transition-all group">
+                    <div class="text-white text-3xl font-black mb-4 group-hover:scale-110 transition">04.</div>
+                    <h4 class="text-xl font-bold mb-2 text-white">Ransomware</h4>
+                    <p class="text-sm text-gray-500 leading-relaxed">2026 mein ransomware attacks ab sirf data lock nahi karte, balki data chori karke public karne ki dhamki (Modern Extortion) dete hain</p>
+                </div>
+                 </div>
+            
+        </div>
+    </section>
+
+    <div class="container">
+        
+    
+
+    </div>
+
+
+    <div id="footer-placeholder"></div>
+    <a href="index.html" id="dynamicHomeBtn" class="fixed bottom-8 right-8 z-[9999] flex items-center justify-center w-14 h-14 bg-cyan-500 text-white rounded-full shadow-[0_0_20px_rgba(6,182,212,0.5)] hover:bg-white hover:text-cyan-500 hover:scale-110 transition-all duration-500 opacity-0 invisible translate-y-10 group">
+    <i class="fas fa-home text-2xl"></i>
+    
+    <span class="absolute right-16 bg-black/80 text-cyan-400 text-xs font-bold px-3 py-2 rounded-lg border border-cyan-500/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap tracking-widest uppercase">
+        Back to Home
+    </span>
+</a>
+<!-- back to home button's script file for logic  -->
+<script>
+    window.addEventListener('scroll', function() {
+        const btn = document.getElementById('dynamicHomeBtn');
+        if (window.scrollY > 250) {
+            btn.classList.remove('opacity-0', 'invisible', 'translate-y-10');
+            btn.classList.add('opacity-100', 'visible', 'translate-y-0');
+        } else {
+            btn.classList.add('opacity-0', 'invisible', 'translate-y-10');
+            btn.classList.remove('opacity-100', 'visible', 'translate-y-0');
+        }
+    });
+</script>
+</body>
+</html>

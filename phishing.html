@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberGuard | Phishing Attacks</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css"> <!-- agar custom CSS hai to -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-black text-white min-h-screen">
+
+<div id="navbar-placeholder"></div>
+    <!-- Navbar (same as your other pages) -->
+    <nav class="fixed top-0 left-0 right-0 z-[9999] glass border-b border-cyan-900/30 backdrop-blur-lg bg-black/30">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="index.html" class="flex items-center gap-2 group">
+                    <div class="w-10 h-10 bg-cyan-500 rounded-lg flex items-center justify-center group-hover:shadow-[0_0_20px_rgba(0,212,255,0.6)] transition-all">
+                        <i class="fas fa-user-shield text-black text-xl"></i>
+                    </div>
+                    <span class="text-2xl font-black tracking-tighter text-white uppercase">
+                        Cyber<span class="text-cyan-500">Security</span>
+                    </span>
+                </a>
+
+                <div class="hidden lg:flex items-center gap-8">
+                    <a href="index.html" class="nav-link text-xs font-black text-gray-300 hover:text-cyan-400 transition-colors tracking-widest uppercase">HOME</a>
+                    <a href="about_us.html" class="nav-link text-xs font-black text-gray-300 hover:text-cyan-400 transition-colors tracking-widest uppercase">ABOUT US</a>
+                    <a href="awareness.html" class="nav-link text-xs font-black text-cyan-400 transition-colors tracking-widest uppercase">AWARENESS</a>
+                    <a href="tools.html" class="nav-link text-xs font-black text-gray-300 hover:text-cyan-400 transition-colors tracking-widest uppercase">TOOLS</a>
+                    <a href="videos.html" class="nav-link text-xs font-black text-gray-300 hover:text-cyan-400 transition-colors tracking-widest uppercase">VIDEOS</a>
+                    <a href="contact_us.html" class="nav-link text-xs font-black text-gray-300 hover:text-cyan-400 transition-colors tracking-widest uppercase">CONTACT US</a>
+                </div>
+
+                <div class="flex items-center gap-6">
+                    <button id="theme-toggle" class="text-gray-300 hover:text-cyan-400 text-lg transition-all">
+                        <i id="theme-icon" class="fas fa-moon"></i>
+                    </button>
+                    <a href="emergency.html" class="hidden md:block px-4 py-2 bg-red-600/10 border border-red-600/50 text-red-500 text-xs font-black rounded hover:bg-red-600 hover:text-white transition-all tracking-widest">
+                        REPORT BREACH
+                    </a>
+                    <button id="mobile-menu-btn" class="lg:hidden text-gray-400 text-xl">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden lg:hidden mt-6 pb-4 space-y-4 border-t border-gray-800 pt-4">
+                <a href="index.html" class="nav-link block text-gray-300 text-xs font-black hover:text-cyan-400">HOME</a>
+                <a href="about_us.html" class="nav-link block text-gray-300 text-xs font-black hover:text-cyan-400">ABOUT US</a>
+                <a href="awareness.html" class="nav-link block text-gray-300 text-xs font-black hover:text-cyan-400">AWARENESS</a>
+                <a href="tools.html" class="nav-link block text-gray-300 text-xs font-black hover:text-cyan-400">TOOLS</a>
+                <a href="videos.html" class="nav-link block text-gray-300 text-xs font-black hover:text-cyan-400">VIDEOS</a>
+                <a href="contact_us.html" class="nav-link block text-gray-300 text-xs font-black hover:text-cyan-400">CONTACT US</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content with padding for fixed navbar -->
+    <div class="pt-24">
+
+        <!-- Hero Section for Phishing -->
+        <section class="relative py-20 bg-gradient-to-b from-[#080a0f] to-black overflow-hidden">
+            <div class="absolute inset-0 opacity-20">
+                <!-- Optional subtle background pattern or video -->
+            </div>
+            <div class="container mx-auto px-6 relative z-10 text-center">
+                <h1 class="text-4xl md:text-6xl font-black mb-6 uppercase italic tracking-tighter text-white">
+                    Phishing <span class="text-cyan-500">Attacks</span>
+                </h1>
+                <p class="text-gray-300 mb-8 text-lg md:text-xl max-w-4xl mx-auto">
+                    90%+ data breaches phishing se shuru hote hain. 2025 mein AI-powered phishing aur QR code attacks badh rahe hain.
+                </p>
+            </div>
+        </section>
+
+        <!-- What is Phishing -->
+        <section class="py-16 bg-black/60">
+            <div class="container mx-auto px-6">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h2 class="text-3xl md:text-4xl font-black mb-6 text-cyan-400">Phishing Kya Hai?</h2>
+                        <p class="text-gray-300 mb-6 leading-relaxed">
+                            Phishing ek social engineering attack hai jisme attacker legitimate entity ban kar users ko trick karta hai sensitive information (passwords, credit card details, bank login) share karne ke liye.
+                        </p>
+                        <p class="text-gray-300 mb-6 leading-relaxed">
+                            Yeh mostly email, SMS (smishing), phone call (vishing), fake websites ya QR codes ke through hota hai.
+                        </p>
+                        <div class="text-sm text-gray-500 italic">
+                            Latest Stat (2025): APWG ke mutabiq Q1 2025 mein 1 million+ phishing attacks record hue.
+                        </div>
+                    </div>
+                    <div class="flex justify-center">
+                        <!-- Visualization: Phishing Process Diagram -->
+                        <img src="https://www.researchgate.net/profile/Mohd-Shukri-Hanapi/publication/235947501/figure/fig1/AS:299785019711499@1448481793135/Stages-in-a-Phishing-attack.png" 
+                             alt="Phishing Attack Stages Diagram" 
+                             class="rounded-xl shadow-2xl border border-cyan-500/30 max-w-full h-auto">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Types of Phishing -->
+        <section class="py-16 bg-gradient-to-b from-black to-[#0a0d12]">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-black mb-12 text-center uppercase tracking-tighter text-white">
+                    Common Types of <span class="text-cyan-500">Phishing</span>
+                </h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="glass p-8 rounded-2xl border border-cyan-500/20 hover:border-cyan-400 transition-all">
+                        <i class="fas fa-envelope text-5xl text-cyan-500 mb-6 block text-center"></i>
+                        <h3 class="text-2xl font-bold mb-4 text-center">Email Phishing</h3>
+                        <p class="text-gray-300">Sabse common – fake bank, Microsoft, Amazon emails jo urgent action mangte hain.</p>
+                    </div>
+
+                    <div class="glass p-8 rounded-2xl border border-cyan-500/20 hover:border-cyan-400 transition-all">
+                        <i class="fas fa-sms text-5xl text-cyan-500 mb-6 block text-center"></i>
+                        <h3 class="text-2xl font-bold mb-4 text-center">Smishing (SMS Phishing)</h3>
+                        <p class="text-gray-300">Fake delivery alerts ya bank alerts SMS mein malicious links ke saath.</p>
+                    </div>
+
+                    <div class="glass p-8 rounded-2xl border border-cyan-500/20 hover:border-cyan-400 transition-all">
+                        <i class="fas fa-phone text-5xl text-cyan-500 mb-6 block text-center"></i>
+                        <h3 class="text-2xl font-bold mb-4 text-center">Vishing (Voice Phishing)</h3>
+                        <p class="text-gray-300">Phone call se impersonation – IRs, bank support, tech support.</p>
+                    </div>
+
+                    <div class="glass p-8 rounded-2xl border border-cyan-500/20 hover:border-cyan-400 transition-all">
+                        <i class="fas fa-qrcode text-5xl text-cyan-500 mb-6 block text-center"></i>
+                        <h3 class="text-2xl font-bold mb-4 text-center">Quishing (QR Code Phishing)</h3>
+                        <p class="text-gray-300">Fake QR codes parking tickets, menus ya posters mein – 2025 mein bohot rise.</p>
+                    </div>
+
+                    <div class="glass p-8 rounded-2xl border border-cyan-500/20 hover:border-cyan-400 transition-all">
+                        <i class="fas fa-globe text-5xl text-cyan-500 mb-6 block text-center"></i>
+                        <h3 class="text-2xl font-bold mb-4 text-center">Spear Phishing</h3>
+                        <p class="text-gray-300">Targeted attack – personal details use karke (employee, CEO impersonation).</p>
+                    </div>
+
+                    <div class="glass p-8 rounded-2xl border border-cyan-500/20 hover:border-cyan-400 transition-all">
+                        <i class="fas fa-brain text-5xl text-cyan-500 mb-6 block text-center"></i>
+                        <h3 class="text-2xl font-bold mb-4 text-center">AI-Powered Phishing</h3>
+                        <p class="text-gray-300">ChatGPT jaisi tech se perfect grammar aur personalized emails (2024-2025 trend).</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Statistics & Visualization -->
+        <section class="py-16 bg-black/80">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-black mb-12 uppercase tracking-tighter text-white">
+                    Phishing <span class="text-cyan-500">Statistics</span> 2025
+                </h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                    <div class="glass p-8 rounded-2xl">
+                        <div class="text-5xl font-black text-cyan-500 mb-4">90%+</div>
+                        <p class="text-gray-300">Data breaches phishing se start hote hain</p>
+                    </div>
+                    <div class="glass p-8 rounded-2xl">
+                        <div class="text-5xl font-black text-cyan-500 mb-4">1M+</div>
+                        <p class="text-gray-300">Phishing attacks Q1 2025 mein (APWG)</p>
+                    </div>
+                    <div class="glass p-8 rounded-2xl">
+                        <div class="text-5xl font-black text-cyan-500 mb-4">$4.88M</div>
+                        <p class="text-gray-300">Average phishing breach cost (IBM 2024)</p>
+                    </div>
+                </div>
+
+                <!-- Visualization: Infographic or Diagram -->
+                <div class="max-w-4xl mx-auto">
+                    <img src="https://www.cisa.gov/sites/default/files/2023-02/phishing-infographic-508c.pdf" 
+                         alt="CISA Phishing Infographic - How Phishing Works" 
+                         class="rounded-xl shadow-2xl border border-cyan-500/30 w-full">
+                    <p class="text-sm text-gray-500 mt-4 italic">
+                        Source: CISA Phishing Infographic (adapted for 2025 trends)
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Prevention Tips -->
+        <section class="py-16 bg-gradient-to-b from-[#0a0d12] to-black">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-black mb-12 text-center uppercase tracking-tighter text-white">
+                    Phishing se Kaise Bachein?
+                </h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="glass p-8 rounded-2xl">
+                        <i class="fas fa-check-circle text-5xl text-cyan-500 mb-6 block text-center"></i>
+                        <h3 class="text-xl font-bold mb-4 text-center">Hover Before Click</h3>
+                        <p class="text-gray-300 text-center">Link pe mouse le jao – real URL dikhao</p>
+                    </div>
+
+                    <div class="glass p-8 rounded-2xl">
+                        <i class="fas fa-shield-halved text-5xl text-cyan-500 mb-6 block text-center"></i>
+                        <h3 class="text-xl font-bold mb-4 text-center">App-based 2FA Use Karo</h3>
+                        <p class="text-gray-300 text-center">SMS 2FA avoid karo – Google Authenticator ya Authy</p>
+                    </div>
+
+                    <div class="glass p-8 rounded-2xl">
+                        <i class="fas fa-envelope text-5xl text-cyan-500 mb-6 block text-center"></i>
+                        <h3 class="text-xl font-bold mb-4 text-center">Unexpected Emails Ignore Karo</h3>
+                        <p class="text-gray-300 text-center">Urgent demands ya prize wale emails report karo</p>
+                    </div>
+
+                    <div class="glass p-8 rounded-2xl">
+                        <i class="fas fa-lock text-5xl text-cyan-500 mb-6 block text-center"></i>
+                        <h3 class="text-xl font-bold mb-4 text-center">HTTPS + Padlock Check Karo</h3>
+                        <p class="text-gray-300 text-center">Fake sites pe bhi HTTPS hota hai – domain carefully dekho</p>
+                    </div>
+
+                    <div class="glass p-8 rounded-2xl">
+                        <i class="fas fa-brain text-5xl text-cyan-500 mb-6 block text-center"></i>
+                        <h3 class="text-xl font-bold mb-4 text-center">Pause & Verify</h3>
+                        <p class="text-gray-300 text-center">Urgent request aaye to phone pe direct company se confirm karo</p>
+                    </div>
+
+                    <div class="glass p-8 rounded-2xl">
+                        <i class="fas fa-shield-virus text-5xl text-cyan-500 mb-6 block text-center"></i>
+                        <h3 class="text-xl font-bold mb-4 text-center">Anti-Phishing Tools Use Karo</h3>
+                        <p class="text-gray-300 text-center">Browser extensions jaise uBlock, Malwarebytes Browser Guard</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+       
+<div id="footer-placeholder"></div>
+    </div>
+
+    <script src="script.js"></script> <!-- agar mobile menu ya theme toggle ka JS hai -->
+</body>
+</html>

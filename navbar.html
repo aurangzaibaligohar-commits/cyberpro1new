@@ -1,0 +1,107 @@
+<nav id="main-nav" class="fixed top-0 left-0 right-0 z-[9999] border-b border-cyan-900/30 backdrop-blur-lg bg-black/30">
+  <div class="container mx-auto px-4 py-3 flex items-center justify-between">
+
+    <a href="index.html" class="flex items-center gap-3">
+      <div class="w-10 h-10 bg-cyan-500 rounded-lg flex items-center justify-center">
+        <i class="fas fa-user-shield text-black text-xl"></i>
+      </div>
+      <span class="text-xl md:text-2xl font-black text-white uppercase">
+        Cyber<span class="text-cyan-500">Security</span>
+      </span>
+    </a>
+
+    <div class="hidden lg:flex gap-8">
+      <a href="index.html" class="nav-link">HOME</a>
+      <a href="about_us.html" class="nav-link">ABOUT US</a>
+      <a href="awareness.html" class="nav-link">AWARENESS</a>
+      <a href="tools.html" class="nav-link">TOOLS</a>
+      <a href="videos.html" class="nav-link">VIDEOS</a>
+      <a href="contact_us.html" class="nav-link">CONTACT US</a>
+    </div>
+
+    <div class="flex items-center gap-4">
+      <div class="flex items-center gap-2 bg-black/30 p-2 rounded-full scale-90 md:scale-100">
+        <i class="fas fa-sun text-yellow-300 text-xs"></i>
+        <div class="relative w-11 h-6">
+          <input id="themeToggle" type="checkbox" class="absolute w-6 h-6 bg-cyan-500 rounded-full appearance-none cursor-pointer transition z-10">
+          <label class="block h-6 bg-gray-700 rounded-full"></label>
+        </div>
+        <i class="fas fa-moon text-indigo-300 text-xs"></i>
+      </div>
+
+      <button id="menuBtn" class="lg:hidden bg-cyan-500 text-black p-2 rounded-md">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<div id="menuOverlay" class="fixed inset-0 bg-black/60 z-[10000] hidden"></div>
+
+<div id="mobileMenu" class="fixed top-0 left-0 h-full w-72 bg-black z-[10001] transform -translate-x-full transition-transform duration-300 ease-in-out flex flex-col px-6 pt-10">
+  
+  <div class="flex justify-between items-center mb-10">
+     <span class="text-xl font-bold text-cyan-500">MENU</span>
+     <button id="closeMenu" class="text-white text-2xl">&times;</button>
+  </div>
+
+  <a href="index.html" class="mobile-link">HOME</a>
+  <a href="about_us.html" class="mobile-link">ABOUT US</a>
+  <a href="awareness.html" class="mobile-link">AWARENESS</a>
+  <a href="tools.html" class="mobile-link">TOOLS</a>
+  <a href="videos.html" class="mobile-link">VIDEOS</a>  
+  <a href="contact_us.html" class="mobile-link">CONTACT US</a>
+</div>
+
+<style>
+/* CSS mein sirf minor mobile touch-ups */
+body { background:#020617; color:#e2e8f0; margin-top:80px; transition:.3s; overflow-x: hidden; }
+body.light { background:#f8fafc; color:#020617; }
+
+.nav-link { color:#cbd5e1; font-weight:900; font-size: 14px; letter-spacing: 1px; }
+.nav-link:hover, .nav-link.active { color:#00d4ff; }
+
+.mobile-link {
+  color:#e2e8f0;
+  font-size:20px;
+  font-weight:700;
+  padding:15px 0;
+  border-bottom:1px solid rgba(255,255,255,.1);
+  text-decoration: none;
+}
+body.light .mobile-link { color:#020617; border-color:rgba(0,0,0,.1); }
+
+#themeToggle:checked { transform:translateX(20px); background:#fff; }
+
+#menuOverlay.show { display: block; }
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const menuBtn = document.getElementById("menuBtn");
+  const sidebar = document.getElementById("mobileMenu");
+  const closeBtn = document.getElementById("closeMenu");
+  const overlay = document.getElementById("menuOverlay");
+
+  const openMenu = () => {
+    sidebar.classList.remove("-translate-x-full");
+    overlay.classList.add("show");
+    document.body.style.overflow = "hidden"; // Scroll band jab menu khule
+  };
+
+  const closeMenu = () => {
+    sidebar.classList.add("-translate-x-full");
+    overlay.classList.remove("show");
+    document.body.style.overflow = "auto";
+  };
+
+  menuBtn.addEventListener("click", openMenu);
+  closeBtn.addEventListener("click", closeMenu);
+  overlay.addEventListener("click", closeMenu);
+
+  // Resize par menu reset
+  window.addEventListener("resize", () => {
+    if (window.innerWidth > 1024) closeMenu();
+  });
+});
+</script>

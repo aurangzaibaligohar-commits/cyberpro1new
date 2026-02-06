@@ -1,0 +1,1070 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Security Awareness Portal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navbar yahan load hoga -->
+<div id="navbar"></div>
+
+<script>
+fetch("navbar.html")
+.then(res => res.text())
+.then(data => document.getElementById("navbar").innerHTML = data);
+</script>
+
+    <!-- Live Alerts Bar (same as index) -->
+<div class="news-container" style="background: #111; color: #0f0; padding: 1px; font-family: 'Courier New', monospace; border: 1px solid #333;">
+    <span style="background: #f00; color: #fff; padding: 2px 8px; font-weight: bold; margin-right: 10px;">CYBER ALERTS:</span>
+    
+    <marquee id="cyber-marquee" behavior="scroll" direction="left" scrollamount="6">
+        Loading latest worldwide cyber security alerts...
+    </marquee>
+</div>
+    </div>
+
+
+    <header class="relative h-screen flex items-center justify-center overflow-hidden border-b border-cyan-900/30">
+        <div class="absolute inset-0 z-0 opacity-10"
+            style="background-image: linear-gradient(#00d4ff 1px, transparent 1px), linear-gradient(90deg, #00d4ff 1px, transparent 1px); background-size: 45px 45px;">
+        </div>
+        <div class="absolute inset-0 z-0">
+            <div
+                class="absolute top-1/4 left-1/4 w-72 h-72 bg-cyan-500 rounded-full filter blur-[100px] animate-blob opacity-20">
+            </div>
+            <div
+                class="absolute bottom-1/4 right-1/3 w-72 h-72 bg-blue-600 rounded-full filter blur-[100px] animate-blob animation-delay-2000 opacity-20">
+            </div>
+        </div>
+
+        <div class="absolute left-10 top-1/2 -translate-y-1/2 hidden xl:block">
+            <div
+                class="font-mono text-[9px] text-cyan-500/30 tracking-[0.4em] uppercase [writing-mode:vertical-lr] rotate-180">
+                Node_Status: Online // Latency: 14ms // TLS_1.3
+            </div>
+        </div>
+        <div class="absolute right-10 top-1/2 -translate-y-1/2 hidden xl:block text-right">
+            <div class="font-mono text-[9px] text-cyan-500/30 tracking-[0.4em] uppercase [writing-mode:vertical-lr]">
+                Encryption: AES_256 // Firewall: Level_Max // SOC: Active
+            </div>
+        </div>
+
+        <div class="relative z-10 text-center px-4">
+            <div
+                class="inline-flex items-center gap-3 px-4 py-1.5 mb-8 rounded-full border border-cyan-500/20 bg-cyan-500/5 backdrop-blur-md">
+                <span class="relative flex h-2 w-2">
+                    <span
+                        class="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-2 w-2 bg-cyan-500"></span>
+                </span>
+                <span class="text-cyan-400 text-[10px] font-black tracking-[0.3em] uppercase">Security Shield:
+                    Active</span>
+            </div>
+           <section class="relative w-full min-h-[600px] h-screen flex items-center justify-center overflow-hidden bg-black">
+  <!-- Background Video -->
+  <video
+    autoplay
+    loop
+    muted
+    playsinline
+    class="absolute inset-0 w-full h-full object-cover z-0 opacity-60"
+  >
+    <source src="/Robot, Technology, Futuristic. Free Stock Video.mp4" type="video/mp4" />
+    <source
+      src="https://assets.mixkit.co/videos/preview/mixkit-digital-animation-of-binary-code-and-data-9964-large.mp4"
+      type="video/mp4"
+    />
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Dark overlay gradient -->
+  <div class="absolute inset-0 bg-gradient-to-b from-black/70 via-black/30 to-black/80 z-10"></div>
+
+  <!-- Content -->
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-20 text-center">
+    <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black mb-6 tracking-tight leading-tight uppercase text-white">
+      DEFEND YOUR<br />
+      <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-600 neon-text">
+        DIGITAL REALM
+      </span>
+    </h1>
+
+    <p class="text-base sm:text-lg md:text-xl text-gray-300 max-w-xl mx-auto mb-10 leading-relaxed">
+      Empowering you to stay one step ahead of cyber threats with real-time analysis and expert training modules.
+    </p>
+
+    <div class="flex flex-col sm:flex-row justify-center items-center gap-5 sm:gap-6">
+      <a
+        href="information.html"
+        class="group relative px-8 sm:px-10 py-3.5 sm:py-4 bg-cyan-500 hover:bg-cyan-400 text-black font-extrabold rounded-xl transition-all duration-300 shadow-[0_0_25px_rgba(0,212,255,0.4)] hover:shadow-[0_0_35px_rgba(0,212,255,0.6)] overflow-hidden w-full sm:w-auto"
+      >
+        <span class="relative z-10 uppercase tracking-wider text-sm sm:text-base">
+          Further Information <i class="fas fa-bolt ml-2"></i>
+        </span>
+        <div
+          class="absolute top-0 -inset-full h-full w-1/2 block transform -skew-x-12 bg-gradient-to-r from-transparent to-white/40 opacity-0 group-hover:opacity-100 group-hover:animate-shine transition-opacity duration-500"
+        ></div>
+      </a>
+
+      <a
+        href="tools.html"
+        class="glass px-8 sm:px-10 py-3.5 sm:py-4 text-white font-bold rounded-xl border border-white/30 hover:bg-white/10 transition-all duration-300 flex items-center justify-center gap-3 uppercase tracking-wider text-sm sm:text-base w-full sm:w-auto"
+      >
+        <i class="fas fa-tools text-cyan-400"></i>
+        Security Tools
+      </a>
+    </div>
+  </div>
+</section>
+            <div
+                class="flex flex-wrap justify-center items-center gap-8 opacity-40 grayscale hover:grayscale-0 transition-all duration-700">
+                <div class="flex items-center gap-2">
+                    <i class="fas fa-shield-check text-lg"></i>
+                    <span class="text-[9px] font-bold uppercase tracking-widest">ISO 27001</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <i class="fas fa-fingerprint text-lg"></i>
+                    <span class="text-[9px] font-bold uppercase tracking-widest">NIST Certified</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <i class="fas fa-user-lock text-lg"></i>
+                    <span class="text-[9px] font-bold uppercase tracking-widest">GDPR Ready</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="absolute bottom-6 left-1/2 -translate-x-1/2 flex flex-col items-center opacity-30">
+            <div class="w-[1px] h-10 bg-gradient-to-b from-cyan-500 to-transparent"></div>
+        </div>
+    </header>
+
+    <!-- <section class="card-section">
+    <h2 class="section-title">Hacking: Initial Access Methods</h2>
+    <div class="container">
+        
+        <div class="card highlight-red">
+            <div class="icon">📧</div>
+            <h3>Social Engineering</h3>
+            <p>Hacker fake messages ya emails <b>(Phishing)</b> ke zariye user ko dhoka dete hain taake woh kisi suspicious link par click kare aur apna data de de.</p>
+        </div>
+
+        <div class="card highlight-red">
+            <div class="icon">📥</div>
+            <h3>Malicious APKs</h3>
+            <p>Third-party websites se aisi apps download karwana jin mein hidden virus <b>(Trojan)</b> hota hai, jo install hote hi hacker ko access de deta hai.</p>
+        </div>
+
+        <div class="card highlight-red">
+            <div class="icon">📱</div>
+            <h3>Physical Access</h3>
+            <p>Agar mobile unprotected ho, toh hacker physically usmein <b>spy apps</b> ya <b>"backdoors"</b> install kar sakta hai jis se baad mein control hasil kiya ja sake.</p>
+        </div>
+
+    </div>
+</section> -->
+    <section class="relative py-10 bg-[#080a0f] border-b border-white/5 overflow-hidden">
+        <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-cyan-500/5 rounded-full filter blur-[120px]"></div>
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="flex flex-col lg:flex-row items-center gap-16">
+                <div class="lg:w-1/2 w-full order-2 lg:order-1">
+                    <div
+                        class="glass rounded-[2rem] p-1 border border-cyan-500/20 bg-black/40 overflow-hidden shadow-2xl shadow-cyan-950/20">
+                        <div
+                            class="relative aspect-video rounded-[1.8rem] overflow-hidden flex items-center justify-center bg-[#0d1117]">
+                            <div class="absolute inset-0 opacity-20"
+                                style="background-image: url('https://www.transparenttextures.com/patterns/carbon-fibre.png');">
+                            </div>
+                            <div class="text-center relative">
+                                <div class="relative w-32 h-32 mx-auto mb-6">
+                                    <div
+                                        class="absolute inset-0 border-2 border-cyan-500/30 rounded-full animate-[ping_3s_linear_infinite]">
+                                    </div>
+                                    <div
+                                        class="absolute inset-0 border border-cyan-500/50 rounded-full flex items-center justify-center bg-cyan-500/5">
+                                        <i class="fas fa-satellite-dish text-cyan-500 text-4xl"></i>
+                                    </div>
+                                </div>
+                                <h4 class="text-cyan-400 font-mono text-sm tracking-[0.3em] uppercase animate-pulse">
+                                    Scanning Global Nodes...</h4>
+                                <div class="mt-4 flex gap-2 justify-center">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-red-500 animate-pulse"></span>
+                                    <span class="w-1.5 h-1.5 rounded-full bg-cyan-500 animate-pulse delay-75"></span>
+                                    <span class="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse delay-150"></span>
+                                </div>
+                            </div>
+                            <div
+                                class="absolute bottom-4 left-6 right-6 flex justify-between font-mono text-[9px] text-gray-500 border-t border-white/5 pt-3">
+                                <span>LATENCY: 12ms</span>
+                                <span class="text-cyan-600">ENCRYPTION: ACTIVE</span>
+                                <span>UPTIME: 99.9%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 order-1 lg:order-2">
+                    <div
+                        class="inline-block px-3 py-1 rounded border border-cyan-500/30 bg-cyan-500/10 text-cyan-500 text-[10px] font-black mb-6 uppercase tracking-widest">
+                        Enterprise Grade Security</div>
+                    <h2
+                        class="text-4xl md:text-4xl font-black mb-6 uppercase italic leading-tight tracking-tighter text-white">
+                        Trusted by <span
+                            class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">Industry
+                            Leaders</span>
+                    </h2>
+                    <p class="text-gray-400 mb-10 text-sm leading-relaxed max-w-lg">
+                        Humara platform duniya ke behtareen security protocols aur training modules ko follow karta hai
+                        taaki aapka digital footprint har waqt mehfooz rahe.
+                    </p>
+                    <div
+                        class="grid grid-cols-3 gap-8 opacity-40 hover:opacity-100 transition-opacity duration-500 items-center grayscale hover:grayscale-0">
+                        <div class="flex items-center gap-2 group cursor-pointer"><i
+                                class="fab fa-aws text-2xl group-hover:text-yellow-500 transition-colors"></i><span
+                                class="font-bold text-[10px]">AWS_Shield</span></div>
+                        <div class="flex items-center gap-2 group cursor-pointer"><i
+                                class="fab fa-google-cloud text-2xl group-hover:text-blue-500 transition-colors"></i><span
+                                class="font-bold text-[10px]">Cloud_Guard</span></div>
+                        <div class="flex items-center gap-2 group cursor-pointer"><i
+                                class="fab fa-microsoft text-2xl group-hover:text-blue-400 transition-colors"></i><span
+                                class="font-bold text-[10px]">Azure_Sec</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<section id="stats-section" class="py-12 sm:py-16 lg:py-20 bg-black border-y border-white/10 relative overflow-hidden">
+  <!-- Background glow -->
+  <div class="absolute inset-0 pointer-events-none flex items-center justify-center">
+    <div class="w-[min(90%,800px)] aspect-[2/1] max-h-[480px] bg-cyan-600/5 blur-3xl rounded-full opacity-60"></div>
+  </div>
+
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <!-- Title -->
+    <div class="text-center mb-10 sm:mb-12 lg:mb-16">
+      <h2 class="text-3xl sm:text-4xl md:text-5xl font-black uppercase tracking-wider text-white">
+        Our <span class="text-cyan-500">Impact</span> in Numbers
+      </h2>
+      <div class="h-1 w-16 sm:w-20 bg-cyan-500 mx-auto mt-4 rounded-full"></div>
+    </div>
+
+    <!-- Stats Grid -->
+    <div class="
+      grid grid-cols-1 xs:grid-cols-2 md:grid-cols-4 
+      gap-5 sm:gap-6 lg:gap-8 
+      max-w-6xl mx-auto text-center
+    ">
+      <!-- Stat 1 – Threats Detected (ab 1 lac) -->
+      <div class="p-5 sm:p-6 lg:p-7 
+                  bg-black/40 backdrop-blur-sm 
+                  rounded-xl sm:rounded-2xl 
+                  border border-white/10 
+                  group hover:border-cyan-500/50 
+                  transition-all duration-300">
+        <h3 class="text-4xl sm:text-5xl lg:text-6xl font-black text-cyan-500 flex items-baseline justify-center gap-1.5">
+          <span class="counter" data-target="100000">0</span>
+        </h3>
+        <p class="mt-3 text-xs sm:text-sm uppercase tracking-[0.25em] font-semibold text-gray-400 group-hover:text-cyan-300 transition-colors">
+          Threats Detected
+        </p>
+      </div>
+
+      <!-- Active Year -->
+      <div class="p-5 sm:p-6 lg:p-7 bg-black/40 backdrop-blur-sm rounded-xl sm:rounded-2xl border border-white/10 group hover:border-white/30 transition-all duration-300">
+        <h3 class="text-4xl sm:text-5xl lg:text-6xl font-black text-white flex items-baseline justify-center">
+          <span class="counter" data-target="2026">0</span>
+        </h3>
+        <p class="mt-3 text-xs sm:text-sm uppercase tracking-[0.25em] font-semibold text-gray-400 group-hover:text-white transition-colors">
+          Active Year
+        </p>
+      </div>
+
+      <!-- Stat 3 – Open Source -->
+      <div class="p-5 sm:p-6 lg:p-7 
+                  bg-black/40 backdrop-blur-sm 
+                  rounded-xl sm:rounded-2xl 
+                  border border-white/10 
+                  group hover:border-red-500/50 
+                  transition-all duration-300">
+        <h3 class="text-4xl sm:text-5xl lg:text-6xl font-black text-red-500 flex items-baseline justify-center gap-1.5">
+          <span class="counter" data-target="100">0</span>
+          <span class="text-xl sm:text-2xl font-bold">%</span>
+        </h3>
+        <p class="mt-3 text-xs sm:text-sm uppercase tracking-[0.25em] font-semibold text-gray-400 group-hover:text-red-300 transition-colors">
+          Open Source
+        </p>
+      </div>
+
+      <!-- Stat 4 – Security Score -->
+      <div class="p-5 sm:p-6 lg:p-7 
+                  bg-black/40 backdrop-blur-sm 
+                  rounded-xl sm:rounded-2xl 
+                  border border-white/10 
+                  group hover:border-cyan-500/50 
+                  transition-all duration-300">
+        <h3 class="text-4xl sm:text-5xl lg:text-6xl font-black text-cyan-500 flex items-baseline justify-center gap-1.5">
+          <span class="counter" data-target="99">0</span>
+          <span class="text-xl sm:text-2xl font-bold">%</span>
+        </h3>
+        <p class="mt-3 text-xs sm:text-sm uppercase tracking-[0.25em] font-semibold text-gray-400 group-hover:text-cyan-300 transition-colors">
+          Security Score
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+   <section class="py-12 md:py-16 lg:py-20 bg-black/40 border-t border-white/5">
+  <div class="container mx-auto px-5 sm:px-6 lg:px-8">
+    <h2 class="text-3xl sm:text-4xl md:text-5xl font-black mb-12 md:mb-16 text-center uppercase tracking-tight italic text-white">
+      How Attacks <span class="text-cyan-500">Unfold</span>
+    </h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6 lg:gap-8">
+      <!-- Card 1: Social Engineering -->
+      <div class="glass relative p-6 sm:p-7 lg:p-8 rounded-2xl border-l-4 border-cyan-500 hover:bg-cyan-500/5 transition-all duration-300 group cursor-pointer"
+           onclick="toggleExpand(this)">
+        <div class="text-cyan-500 text-3xl sm:text-4xl font-black mb-4 group-hover:scale-110 transition-transform duration-300">01.</div>
+        <h4 class="text-lg sm:text-xl font-bold mb-3 text-white">Social Engineering</h4>
+        
+        <p class="text-sm text-gray-400 leading-relaxed short-text">
+          Using phishing techniques via fraudulent emails and messages to manipulate users into interacting with malicious links.
+        </p>
+        
+        <p class="text-sm text-gray-300 leading-relaxed full-text hidden mt-4">
+          Social engineering remains one of the most effective initial attack vectors in mobile security breaches. Attackers craft highly convincing phishing emails, SMS (smishing), WhatsApp/Telegram messages, or even voice calls (vishing) impersonating trusted entities like banks, delivery services, or family members. These messages typically create urgency ("Your account is locked – click to verify") and direct users to fake login pages or prompt them to download malicious files. Once the user interacts, credentials are stolen or malware is installed – often without any technical exploit of the device itself.
+          
+          <div class="mt-6 pt-4 border-t border-white/10">
+            <p class="text-xs text-cyan-300 font-medium mb-2">Watch this explanatory video:</p>
+            <a href="https://www.youtube.com/watch?v=xNJzaL17Ges" target="_blank" rel="noopener noreferrer" 
+               class="block text-sm text-gray-200 hover:text-cyan-400 transition">
+              Phishing and Social Engineering Explained | Human-Targeted Cyber Attacks (~10 min)
+            </a>
+          </div>
+        </p>
+
+        <div class="mt-5 text-right">
+          <span class="text-cyan-400 text-sm font-medium hover:text-cyan-300 transition-colors toggle-btn">
+            See More →
+          </span>
+        </div>
+        <span class="absolute top-4 right-4 text-gray-500 text-xs hidden close-indicator">Click to close</span>
+      </div>
+
+      <!-- Card 2: Malicious APKs -->
+      <div class="glass relative p-6 sm:p-7 lg:p-8 rounded-2xl border-l-4 border-white/60 hover:bg-white/5 transition-all duration-300 group cursor-pointer"
+           onclick="toggleExpand(this)">
+        <div class="text-white text-3xl sm:text-4xl font-black mb-4 group-hover:scale-110 transition-transform duration-300">02.</div>
+        <h4 class="text-lg sm:text-xl font-bold mb-3 text-white">Malicious APKs</h4>
+        
+        <p class="text-sm text-gray-400 leading-relaxed short-text">
+          Distributing fake or trojanized apps through unofficial third-party platforms, app stores, or direct download links.
+        </p>
+        
+        <p class="text-sm text-gray-300 leading-relaxed full-text hidden mt-4">
+          Malicious APK files are commonly spread via unofficial app stores, Telegram channels, phishing sites, or even legitimate-looking Google Play alternatives. These apps often mimic popular tools (VPNs, cleaners, games, wallets) but contain hidden trojans, keyloggers, or crypto clippers. Once installed (usually after disabling "Install from unknown sources" warning), they request dangerous permissions (SMS, accessibility, overlay), steal credentials, monitor clipboard for wallet addresses, or install additional payloads silently.
+          
+          <div class="mt-6 pt-4 border-t border-white/10">
+            <p class="text-xs text-cyan-300 font-medium mb-2">Watch this explanatory video:</p>
+            <a href="https://www.youtube.com/watch?v=NBFqEfxuF2w" target="_blank" rel="noopener noreferrer" 
+               class="block text-sm text-gray-200 hover:text-cyan-400 transition">
+              APK Malware: What is it and How you can be Safe? (~8 min)
+            </a>
+          </div>
+        </p>
+
+        <div class="mt-5 text-right">
+          <span class="text-cyan-400 text-sm font-medium hover:text-cyan-300 transition-colors toggle-btn">
+            See More →
+          </span>
+        </div>
+        <span class="absolute top-4 right-4 text-gray-500 text-xs hidden close-indicator">Click to close</span>
+      </div>
+
+      <!-- Card 3: Physical Access -->
+      <div class="glass relative p-6 sm:p-7 lg:p-8 rounded-2xl border-l-4 border-cyan-500 hover:bg-cyan-500/5 transition-all duration-300 group cursor-pointer"
+           onclick="toggleExpand(this)">
+        <div class="text-cyan-500 text-3xl sm:text-4xl font-black mb-4 group-hover:scale-110 transition-transform duration-300">03.</div>
+        <h4 class="text-lg sm:text-xl font-bold mb-3 text-white">Physical Access</h4>
+        
+        <p class="text-sm text-gray-400 leading-relaxed short-text">
+          If a mobile phone is left unprotected, attackers can install spy apps or backdoors directly on the device.
+        </p>
+        
+        <p class="text-sm text-gray-300 leading-relaxed full-text hidden mt-4">
+          Physical access attacks are particularly dangerous because they bypass most remote protections. If someone gains temporary access to an unlocked phone (at home, office, café, or via theft), they can install stalkerware/spyware (mSpy, FlexiSPY, etc.), enable developer options, install malicious certificates, or root/jailbreak the device to gain persistent control. Even short access (2–5 minutes) is often enough. Biometric locks help, but many users still use weak PINs or leave devices unlocked.
+          
+          <div class="mt-6 pt-4 border-t border-white/10">
+            <p class="text-xs text-cyan-300 font-medium mb-2">Watch this explanatory video:</p>
+            <a href="https://www.youtube.com/watch?v=tWWKlWMJt2w" target="_blank" rel="noopener noreferrer" 
+               class="block text-sm text-gray-200 hover:text-cyan-400 transition">
+              Spyware, easy to install, easy to hack (~5 min)
+            </a>
+          </div>
+        </p>
+
+        <div class="mt-5 text-right">
+          <span class="text-cyan-400 text-sm font-medium hover:text-cyan-300 transition-colors toggle-btn">
+            See More →
+          </span>
+        </div>
+        <span class="absolute top-4 right-4 text-gray-500 text-xs hidden close-indicator">Click to close</span>
+      </div>
+
+      <!-- Card 4: Takeover -->
+      <div class="glass relative p-6 sm:p-7 lg:p-8 rounded-2xl border-l-4 border-white/60 hover:bg-white/5 transition-all duration-300 group cursor-pointer"
+           onclick="toggleExpand(this)">
+        <div class="text-white text-3xl sm:text-4xl font-black mb-4 group-hover:scale-110 transition-transform duration-300">04.</div>
+        <h4 class="text-lg sm:text-xl font-bold mb-3 text-white">Takeover</h4>
+        
+        <p class="text-sm text-gray-400 leading-relaxed short-text">
+          Complete control over the victim's data, accounts, and digital assets.
+        </p>
+        
+        <p class="text-sm text-gray-300 leading-relaxed full-text hidden mt-4">
+          The final stage of most sophisticated mobile attacks is full account/device takeover. Attackers use stolen credentials, session tokens, 2FA bypass (via SIM swap, phishing, or accessibility abuse), or persistent malware to access banking apps, crypto wallets, email, social media, and cloud storage. Once inside, they transfer funds, drain wallets, change recovery options, delete backups, or use the device for further attacks (SMS forwarding, botnet inclusion). Recovery at this stage is extremely difficult and often results in permanent financial loss.
+          
+          <div class="mt-6 pt-4 border-t border-white/10">
+            <p class="text-xs text-cyan-300 font-medium mb-2">Watch this explanatory video:</p>
+            <a href="https://www.youtube.com/watch?v=XxfgJXGePvg" target="_blank" rel="noopener noreferrer" 
+               class="block text-sm text-gray-200 hover:text-cyan-400 transition">
+              Account Takeovers, Explained (~6 min)
+            </a>
+          </div>
+        </p>
+
+        <div class="mt-5 text-right">
+          <span class="text-cyan-400 text-sm font-medium hover:text-cyan-300 transition-colors toggle-btn">
+            See More →
+          </span>
+        </div>
+        <span class="absolute top-4 right-4 text-gray-500 text-xs hidden close-indicator">Click to close</span>
+      </div>
+    </div>
+  </div>
+   </section>
+    <section class="py-1- bg-black/40">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-black mb-16 text-center uppercase tracking-tighter italic">
+                Vulnerability Exploitation <span class="text-cyan-500">(Kamzori ka Faida)</span>
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                <div class="glass p-8 rounded-2xl border-l-4 border-cyan-500 hover:bg-cyan-500/5 transition-all group">
+                    <div class="text-cyan-500 text-3xl font-black mb-4 group-hover:scale-110 transition">01.</div>
+                    <h4 class="text-xl font-bold mb-2 text-white">Outdated OS</h4>
+                    <p class="text-sm text-gray-500 leading-relaxed">Purane Android ya iOS versions jin ke security loopholes abhi tak patch nahi hue hote..</p>
+                </div>
+
+                <div class="glass p-8 rounded-2xl border-l-4 border-white hover:bg-white/5 transition-all group">
+                    <div class="text-white text-3xl font-black mb-4 group-hover:scale-110 transition">02.</div>
+                    <h4 class="text-xl font-bold mb-2 text-white">Zero-Day Exploits</h4>
+                    <p class="text-sm text-gray-500 leading-relaxed">"Security flaws for which the company has not yet developed a fix are known as 'Zero-day vulnerabilities.'"</p>
+                </div>
+
+                <div class="glass p-8 rounded-2xl border-l-4 border-cyan-500 hover:bg-cyan-500/5 transition-all group">
+                    <div class="text-cyan-500 text-3xl font-black mb-4 group-hover:scale-110 transition">03.</div>
+                    <h4 class="text-xl font-bold mb-2 text-white">Insecure Wi-Fi</h4>
+                    <p class="text-sm text-gray-500 leading-relaxed">Public Wi-Fi par data intercept karke login credentials chori karna (Man-in-the-Middle attack).</p>
+                </div>
+
+                <div class="glass p-8 rounded-2xl border-l-4 border-white hover:bg-white/5 transition-all group">
+                    <div class="text-white text-3xl font-black mb-4 group-hover:scale-110 transition">04.</div>
+                    <h4 class="text-xl font-bold mb-2 text-white">Takeover</h4>
+                    <p class="text-sm text-gray-500 leading-relaxed">Complete control over the victim's data and digital
+                        assets.</p>
+                </div>
+                 </div>
+            
+        </div>
+    </section>
+  HTML<section class="py-12 md:py-16 lg:py-20 bg-black/40 border-t border-white/5">
+  <div class="container mx-auto px-5 sm:px-6 lg:px-8">
+    <h2 class="text-3xl sm:text-4xl md:text-5xl font-black mb-12 md:mb-16 text-center uppercase tracking-tight italic text-white">
+      Global Cybersecurity Landscape <span class="text-cyan-500">2026</span> Articles
+    </h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6 lg:gap-8">
+      <!-- Card 1: AI Supercharging Threats -->
+      <div class="glass relative p-6 sm:p-7 lg:p-8 rounded-2xl border-l-4 border-cyan-500 hover:bg-cyan-500/5 transition-all duration-300 group cursor-pointer"
+           onclick="toggleExpand(this)">
+        <div class="text-cyan-500 text-3xl sm:text-4xl font-black mb-4 group-hover:scale-110 transition-transform duration-300">01.</div>
+        <h4 class="text-lg sm:text-xl font-bold mb-3 text-white">AI as Primary Tool for Attacks & Defense</h4>
+        
+        <p class="text-sm text-gray-400 leading-relaxed short-text">
+          Global cyber threats are faster & more complex. WEF 2026 report: AI is now the top driver for both defense and cyberattacks (94% of experts agree).
+        </p>
+        
+        <p class="text-sm text-gray-300 leading-relaxed full-text hidden mt-4">
+          AI adoption is accelerating the cyber arms race — enhancing detection/response while enabling sophisticated, scalable attacks. 87% of leaders see AI vulnerabilities as the fastest-growing risk. Key concerns: data leaks (30%) and adversarial AI capabilities (28%). Organizations must balance innovation with governance to avoid new attack surfaces.
+          
+          <div class="mt-6 pt-4 border-t border-white/10">
+            <p class="text-xs text-cyan-300 font-medium mb-2">Key Source:</p>
+            <a href="https://www.weforum.org/publications/global-cybersecurity-outlook-2026" target="_blank" rel="noopener noreferrer" 
+               class="block text-sm text-gray-200 hover:text-cyan-400 transition">
+              WEF Global Cybersecurity Outlook 2026 (Jan 2026)
+            </a>
+            
+            <p class="text-xs text-cyan-300 font-medium mt-4 mb-2">Watch explanatory video:</p>
+            <a href="https://www.youtube.com/watch?v=noBUovPBDVQ" target="_blank" rel="noopener noreferrer" 
+               class="block text-sm text-gray-200 hover:text-cyan-400 transition">
+              How Agentic AI Will Break Most Cybersecurity Tools In 2026 (~10 min)
+            </a>
+          </div>
+        </p>
+
+        <div class="mt-5 text-right">
+          <span class="text-cyan-400 text-sm font-medium hover:text-cyan-300 transition-colors toggle-btn">
+            Read More →
+          </span>
+        </div>
+        <span class="absolute top-4 right-4 text-gray-500 text-xs hidden close-indicator">Click to close</span>
+      </div>
+
+      <!-- Card 2: AI vs AI (Agentic Attacks) -->
+      <div class="glass relative p-6 sm:p-7 lg:p-8 rounded-2xl border-l-4 border-white/60 hover:bg-white/5 transition-all duration-300 group cursor-pointer"
+           onclick="toggleExpand(this)">
+        <div class="text-white text-3xl sm:text-4xl font-black mb-4 group-hover:scale-110 transition-transform duration-300">02.</div>
+        <h4 class="text-lg sm:text-xl font-bold mb-3 text-white">AI vs. AI – Agentic Autonomous Attacks</h4>
+        
+        <p class="text-sm text-gray-400 leading-relaxed short-text">
+          Cyberattacks now use 'Agentic AI' (autonomous agents) to bypass defenses in seconds — no human needed for full attack lifecycle.
+        </p>
+        
+        <p class="text-sm text-gray-300 leading-relaxed full-text hidden mt-4">
+          Agentic AI enables autonomous planning, adaptation, and execution: reconnaissance → exploitation → lateral movement → exfiltration. Predictions: By mid-2026, major breaches may involve fully autonomous AI systems. Defenders must adopt AI agents for machine-speed response, but attackers scale faster with minimal oversight.
+          
+          <div class="mt-6 pt-4 border-t border-white/10">
+            <p class="text-xs text-cyan-300 font-medium mb-2">Key Sources:</p>
+            <a href="https://www.weforum.org/publications/global-cybersecurity-outlook-2026" target="_blank" rel="noopener noreferrer" 
+               class="block text-sm text-gray-200 hover:text-cyan-400 transition mb-1">
+              WEF Outlook 2026
+            </a>
+            <a href="https://cloud.google.com/security/resources/cybersecurity-forecast" target="_blank" rel="noopener noreferrer" 
+               class="block text-sm text-gray-200 hover:text-cyan-400 transition">
+              Google Cloud Cybersecurity Forecast 2026
+            </a>
+          </div>
+        </p>
+
+        <div class="mt-5 text-right">
+          <span class="text-cyan-400 text-sm font-medium hover:text-cyan-300 transition-colors toggle-btn">
+            Read More →
+          </span>
+        </div>
+        <span class="absolute top-4 right-4 text-gray-500 text-xs hidden close-indicator">Click to close</span>
+      </div>
+
+      <!-- Card 3: Cyber Inequity -->
+      <div class="glass relative p-6 sm:p-7 lg:p-8 rounded-2xl border-l-4 border-cyan-500 hover:bg-cyan-500/5 transition-all duration-300 group cursor-pointer"
+           onclick="toggleExpand(this)">
+        <div class="text-cyan-500 text-3xl sm:text-4xl font-black mb-4 group-hover:scale-110 transition-transform duration-300">03.</div>
+        <h4 class="text-lg sm:text-xl font-bold mb-3 text-white">Cyber Inequity & Digital Divide</h4>
+        
+        <p class="text-sm text-gray-400 leading-relaxed short-text">
+          Rich countries/organizations secure themselves, but poor countries & small entities struggle to afford defenses — widening global resilience gap.
+        </p>
+        
+        <p class="text-sm text-gray-300 leading-relaxed full-text hidden mt-4">
+          Cyber inequity deepens: sub-Saharan Africa, Latin America face severe skills shortages (70%+ CEOs report gaps). Less-resourced regions exposed to fraud, supply-chain risks. Economic impact: cyberattacks reduce GDP growth in developing economies. Call for shared responsibility & global cooperation to close the divide.
+          
+          <div class="mt-6 pt-4 border-t border-white/10">
+            <p class="text-xs text-cyan-300 font-medium mb-2">Key Source:</p>
+            <a href="https://www.weforum.org/publications/global-cybersecurity-outlook-2026" target="_blank" rel="noopener noreferrer" 
+               class="block text-sm text-gray-200 hover:text-cyan-400 transition">
+              WEF Global Cybersecurity Outlook 2026 – Section on Cyber Inequity
+            </a>
+          </div>
+        </p>
+
+        <div class="mt-5 text-right">
+          <span class="text-cyan-400 text-sm font-medium hover:text-cyan-300 transition-colors toggle-btn">
+            Read More →
+          </span>
+        </div>
+        <span class="absolute top-4 right-4 text-gray-500 text-xs hidden close-indicator">Click to close</span>
+      </div>
+
+      <!-- Card 4: Updated to Ransomware/Overall Takeover (fits 2026 trends) -->
+      <div class="glass relative p-6 sm:p-7 lg:p-8 rounded-2xl border-l-4 border-white/60 hover:bg-white/5 transition-all duration-300 group cursor-pointer"
+           onclick="toggleExpand(this)">
+        <div class="text-white text-3xl sm:text-4xl font-black mb-4 group-hover:scale-110 transition-transform duration-300">04.</div>
+        <h4 class="text-lg sm:text-xl font-bold mb-3 text-white">Ransomware & Full Takeover Risks</h4>
+        
+        <p class="text-sm text-gray-400 leading-relaxed short-text">
+          Persistent ransomware & full device/account takeover remain top threats — now supercharged by AI for faster, stealthier campaigns.
+        </p>
+        
+        <p class="text-sm text-gray-300 leading-relaxed full-text hidden mt-4">
+          Ransomware evolves with AI: targeted, strategic, harder to detect. Full takeover via stolen credentials, 2FA bypass, persistent malware leads to data drain, fund transfers, deleted backups. Recovery difficult; economic losses massive. Focus: resilience over perfection, AI governance, zero-trust.
+          
+          <div class="mt-6 pt-4 border-t border-white/10">
+            <p class="text-xs text-cyan-300 font-medium mb-2">Key Sources:</p>
+            <a href="https://research.checkpoint.com/2026/cyber-security-report-2026" target="_blank" rel="noopener noreferrer" 
+               class="block text-sm text-gray-200 hover:text-cyan-400 transition mb-1">
+              Check Point Cyber Security Report 2026
+            </a>
+            <a href="https://www.weforum.org/publications/global-cybersecurity-outlook-2026" target="_blank" rel="noopener noreferrer" 
+               class="block text-sm text-gray-200 hover:text-cyan-400 transition">
+              WEF Outlook 2026
+            </a>
+          </div>
+        </p>
+
+        <div class="mt-5 text-right">
+          <span class="text-cyan-400 text-sm font-medium hover:text-cyan-300 transition-colors toggle-btn">
+            Read More →
+          </span>
+        </div>
+        <span class="absolute top-4 right-4 text-gray-500 text-xs hidden close-indicator">Click to close</span>
+      </div>
+    </div>
+  </div>
+    <section class="py-10 bg-[#0a0d12] relative overflow-hidden border-y border-white/5">
+        <div class="absolute top-1/2 left-0 w-96 h-96 bg-cyan-500/5 rounded-full filter blur-[100px]"></div>
+
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-4xl font-black uppercase italic tracking-tighter text-white">
+                    Pro <span class="text-cyan-500">Security Arsenal</span>
+                </h2>
+                <p class="text-gray-500 mt-2 font-mono text-xs uppercase tracking-[0.3em]">Advanced Defensive Utilities
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div
+                    class="glass p-8 rounded-[2.5rem] border border-white/5 hover:border-cyan-500/50 transition-all group relative overflow-hidden">
+                    <div class="absolute -right-4 -top-4 opacity-5 group-hover:opacity-10 transition-opacity">
+                        <i class="fas fa-key text-9xl text-white"></i>
+                    </div>
+                    <div
+                        class="w-14 h-14 bg-cyan-500/10 rounded-2xl flex items-center justify-center mb-6 border border-cyan-500/20 group-hover:bg-cyan-500 group-hover:text-black transition-all">
+                        <i class="fas fa-key text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">Vault Guard</h3>
+                    <p class="text-gray-500 text-sm mb-6">Apne passwords ki strength check karein aur unhe brute-force
+                        attack se bachayein.</p>
+                    <a href="tools.html"
+                        class="inline-flex items-center gap-2 text-cyan-500 text-[10px] font-bold uppercase tracking-widest hover:gap-4 transition-all">
+                        Launch Tool <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div
+                    class="glass p-8 rounded-[2.5rem] border border-white/5 hover:border-white/50 transition-all group relative overflow-hidden">
+                    <div class="absolute -right-4 -top-4 opacity-5 group-hover:opacity-10 transition-opacity">
+                        <i class="fas fa-search-radar text-9xl text-white"></i>
+                    </div>
+                    <div
+                        class="w-14 h-14 bg-white/10 rounded-2xl flex items-center justify-center mb-6 border border-white/20 group-hover:bg-white group-hover:text-black transition-all">
+                        <i class="fas fa-search-radar text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">VulnScan AI</h3>
+                    <p class="text-gray-500 text-sm mb-6">Scan your digital assets for known vulnerabilities and
+                        security misconfigurations.</p>
+                    <a href="tools.html"
+                        class="inline-flex items-center gap-2 text-white text-[10px] font-bold uppercase tracking-widest hover:gap-4 transition-all">
+                        Launch Tool <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div
+                    class="glass p-8 rounded-[2.5rem] border border-white/5 hover:border-cyan-500/50 transition-all group relative overflow-hidden">
+                    <div class="absolute -right-4 -top-4 opacity-5 group-hover:opacity-10 transition-opacity">
+                        <i class="fas fa-link text-9xl text-white"></i>
+                    </div>
+                    <div
+                        class="w-14 h-14 bg-cyan-500/10 rounded-2xl flex items-center justify-center mb-6 border border-cyan-500/20 group-hover:bg-cyan-500 group-hover:text-black transition-all">
+                        <i class="fas fa-link text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">Link Analyzer</h3>
+                    <p class="text-gray-500 text-sm mb-6">Kisi bhi link ko click karne se pehle use hamare real-time
+                        sandbox mein test karein.</p>
+                    <a href="tools.html"
+                        class="inline-flex items-center gap-2 text-cyan-500 text-[10px] font-bold uppercase tracking-widest hover:gap-4 transition-all">
+                        Launch Tool <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-gray-900/10 text-center">
+        <h2 class="text-4xl font-black mb-12 uppercase italic">Security <span class="text-cyan-400">Labs</span></h2>
+        <div class="max-w-2xl mx-auto p-2 glass rounded-3xl shadow-2xl shadow-cyan-500/10">
+            <div class="aspect-video relative overflow-hidden rounded-2xl">
+                <iframe class="absolute inset-0 w-full h-full"
+                    src="https://www.youtube.com/embed/bPVaOlJ6ln0?rel=0&modestbranding=1" frameborder="0"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-black/60 overflow-hidden border-t border-white/5 relative">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+                <div class="border-l-4 border-cyan-500 pl-6 text-left">
+                    <h2 class="text-xl font-black uppercase italic tracking-tighter text-white">
+                        Available <span class="text-cyan-500">Modules</span>
+                    </h2>
+                    <p class="text-gray-500 font-mono text-[10px] mt-2 tracking-[0.3em] uppercase">
+                        Training Intel Loaded: 10 Modules (Use Buttons or Scroll →)
+                    </p>
+                </div>
+
+                <div class="flex items-center gap-4">
+                    <div class="flex gap-2 mr-4">
+                        <button
+                            onclick="document.getElementById('slider-container').scrollBy({left: -400, behavior: 'smooth'})"
+                            class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-cyan-500 hover:bg-cyan-500 hover:text-black transition-all">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button
+                            onclick="document.getElementById('slider-container').scrollBy({left: 400, behavior: 'smooth'})"
+                            class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-cyan-500 hover:bg-cyan-500 hover:text-black transition-all">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+
+                    <a href="videos.html"
+                        class="group flex items-center gap-3 text-cyan-500 font-bold uppercase tracking-widest text-[10px] hover:text-white transition-all">
+                        Explore All Labs
+                        <span
+                            class="w-8 h-8 rounded-full border border-cyan-500/30 flex items-center justify-center group-hover:bg-cyan-500 group-hover:text-black transition-all">
+                            <i class="fas fa-arrow-right"></i>
+                        </span>
+                    </a>
+                </div>
+            </div>
+
+            <div id="slider-container"
+                class="flex overflow-x-auto gap-8 pb-10 no-scrollbar snap-x scroll-smooth cursor-grab active:cursor-grabbing">
+
+                <div
+                    class="min-w-[300px] md:min-w-[380px] max-w-[400px] flex-shrink-0 snap-start glass rounded-3xl overflow-hidden border-t-2 border-cyan-500/50 group transition-all duration-300">
+                    <a href="https://www.youtube.com/watch?v=bPVaOlJ6ln0" target="_blank">
+                        <div class="relative aspect-video">
+                            <img src="https://img.youtube.com/vi/bPVaOlJ6ln0/maxresdefault.jpg"
+                                class="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-all">
+                            <div class="absolute inset-0 flex items-center justify-center"><i
+                                    class="fas fa-play-circle text-5xl text-cyan-500 opacity-80 group-hover:scale-110 transition-all"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="p-6 text-left"><span
+                            class="text-[9px] font-bold text-cyan-500 font-mono uppercase tracking-widest">Module_01</span>
+                        <h3 class="text-lg font-bold text-white mt-2 uppercase italic tracking-wider">Cyber Security
+                            Full Course</h3>
+                    </div>
+                </div>
+
+                <div
+                    class="min-w-[300px] md:min-w-[380px] max-w-[400px] flex-shrink-0 snap-start glass rounded-3xl overflow-hidden border-t-2 border-blue-500/50 group transition-all duration-300">
+                    <a href="https://www.youtube.com/watch?v=6mXzYV4V_2E" target="_blank">
+                        <div class="relative aspect-video">
+                            <img src="https://img.youtube.com/vi/6mXzYV4V_2E/maxresdefault.jpg"
+                                class="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-all">
+                            <div class="absolute inset-0 flex items-center justify-center"><i
+                                    class="fas fa-play-circle text-5xl text-blue-500 opacity-80 group-hover:scale-110 transition-all"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="p-6 text-left"><span
+                            class="text-[9px] font-bold text-blue-500 font-mono uppercase tracking-widest">Module_02</span>
+                        <h3 class="text-lg font-bold text-white mt-2 uppercase italic tracking-wider">Hacking Explained
+                        </h3>
+                    </div>
+                </div>
+
+                <div
+                    class="min-w-[300px] md:min-w-[380px] max-w-[400px] flex-shrink-0 snap-start glass rounded-3xl overflow-hidden border-t-2 border-orange-500/50 group transition-all duration-300">
+                    <a href="https://www.youtube.com/watch?v=QwXkEb9h04I" target="_blank">
+                        <div class="relative aspect-video">
+                            <img src="https://img.youtube.com/vi/QwXkEb9h04I/maxresdefault.jpg"
+                                class="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-all">
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <i
+                                    class="fas fa-play-circle text-5xl text-orange-500 opacity-80 group-hover:scale-110 transition-all"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="p-6 text-left">
+                        <span
+                            class="text-[9px] font-bold text-orange-500 font-mono uppercase tracking-widest">Module_06</span>
+                        <h3 class="text-lg font-bold text-white mt-2 uppercase italic tracking-wider">Bug Bounty Roadmap
+                            2024</h3>
+                    </div>
+                </div>
+
+                <div
+                    class="min-w-[300px] md:min-w-[380px] max-w-[400px] flex-shrink-0 snap-start glass rounded-3xl overflow-hidden border-t-2 border-yellow-400/50 group transition-all duration-300">
+                    <a href="https://www.youtube.com/watch?v=3Kq1MIfTWCE" target="_blank">
+                        <div class="relative aspect-video">
+                            <img src="https://img.youtube.com/vi/3Kq1MIfTWCE/maxresdefault.jpg"
+                                class="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-all">
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <i
+                                    class="fas fa-play-circle text-5xl text-yellow-400 opacity-80 group-hover:scale-110 transition-all"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="p-6 text-left">
+                        <span
+                            class="text-[9px] font-bold text-yellow-400 font-mono uppercase tracking-widest">Module_07</span>
+                        <h3 class="text-lg font-bold text-white mt-2 uppercase italic tracking-wider">Python for Cyber
+                            Security</h3>
+                    </div>
+                </div>
+
+                <div
+                    class="min-w-[300px] md:min-w-[380px] max-w-[400px] flex-shrink-0 snap-start glass rounded-3xl overflow-hidden border-t-2 border-indigo-500/50 group transition-all duration-300">
+                    <a href="https://www.youtube.com/watch?v=8lR27r8Y_S4" target="_blank">
+                        <div class="relative aspect-video">
+                            <img src="https://img.youtube.com/vi/8lR27r8Y_S4/maxresdefault.jpg"
+                                class="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-all">
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <i
+                                    class="fas fa-play-circle text-5xl text-indigo-500 opacity-80 group-hover:scale-110 transition-all"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="p-6 text-left">
+                        <span
+                            class="text-[9px] font-bold text-indigo-500 font-mono uppercase tracking-widest">Module_08</span>
+                        <h3 class="text-lg font-bold text-white mt-2 uppercase italic tracking-wider">Metasploit Mastery
+                        </h3>
+                    </div>
+                </div>
+
+                <div
+                    class="min-w-[300px] md:min-w-[380px] max-w-[400px] flex-shrink-0 snap-start glass rounded-3xl overflow-hidden border-t-2 border-pink-500/50 group transition-all duration-300">
+                    <a href="https://www.youtube.com/watch?v=Yp9fM9_N-I0" target="_blank">
+                        <div class="relative aspect-video">
+                            <img src="https://img.youtube.com/vi/Yp9fM9_N-I0/maxresdefault.jpg"
+                                class="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-all">
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <i
+                                    class="fas fa-play-circle text-5xl text-pink-500 opacity-80 group-hover:scale-110 transition-all"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="p-6 text-left">
+                        <span
+                            class="text-[9px] font-bold text-pink-500 font-mono uppercase tracking-widest">Module_09</span>
+                        <h3 class="text-lg font-bold text-white mt-2 uppercase italic tracking-wider">Intro to Digital
+                            Forensics</h3>
+                    </div>
+                </div>
+
+                <div
+                    class="min-w-[300px] md:min-w-[380px] max-w-[400px] flex-shrink-0 snap-start glass rounded-3xl overflow-hidden border-t-2 border-emerald-500/50 group transition-all duration-300">
+                    <a href="https://www.youtube.com/watch?v=LcKnxhelV9U" target="_blank">
+                        <div class="relative aspect-video">
+                            <img src="https://img.youtube.com/vi/LcKnxhelV9U/maxresdefault.jpg"
+                                class="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-all">
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <i
+                                    class="fas fa-play-circle text-5xl text-emerald-500 opacity-80 group-hover:scale-110 transition-all"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="p-6 text-left">
+                        <span
+                            class="text-[9px] font-bold text-emerald-500 font-mono uppercase tracking-widest">Module_10</span>
+                        <h3 class="text-lg font-bold text-white mt-2 uppercase italic tracking-wider">Social Engineering
+                            Tactics</h3>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-10 bg-black relative border-t border-white/5">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-4xl font-black uppercase italic tracking-tighter text-white">
+                    Strategic <span class="text-cyan-500">Defense</span>
+                </h2>
+                <p class="text-gray-500 mt-2 font-mono text-xs uppercase tracking-[0.3em]">
+                    Multi-Layered Security Infrastructure
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div
+                    class="glass p-10 rounded-3xl border-t-2 border-cyan-500/50 hover:bg-cyan-500/5 transition-all group">
+                    <i class="fas fa-user-shield text-2xl text-cyan-400 mb-6 group-hover:scale-110 transition"></i>
+                    <h3 class="text-xl font-bold mb-4 uppercase tracking-wider text-white">Identity Security</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">
+                        Advanced biometric and multi-factor authentication protocols to secure all access points.
+                    </p>
+                </div>
+
+                <div class="glass p-10 rounded-3xl border-t-2 border-white/30 hover:bg-white/5 transition-all group">
+                    <i class="fas fa-network-wired text-2xl text-white mb-6 group-hover:scale-110 transition"></i>
+                    <h3 class="text-xl font-bold mb-4 uppercase tracking-wider text-white">Network Hardening</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">
+                        Deep packet inspection and zero-trust architecture to neutralize external threats.
+                    </p>
+                </div>
+
+                <div
+                    class="glass p-10 rounded-3xl border-t-2 border-cyan-500/50 hover:bg-cyan-500/5 transition-all group">
+                    <i class="fas fa-biohazard text-2xl text-cyan-400 mb-6 group-hover:scale-110 transition"></i>
+                    <h3 class="text-xl font-bold mb-4 uppercase tracking-wider text-white">Threat Analysis</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">
+                        Isolated sandbox environments to analyze and detonate suspicious payloads safely.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- <section class="py-24 bg-cyan-950/5">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="glass p-8 rounded-2xl border-l-2 border-cyan-500">
+                    <p class="italic text-gray-400 mb-6">"CyberGuard has completely transformed how we handle sensitive
+                        data. Their real-time monitoring is unmatched in the industry."</p>
+                    <div class="flex items-center gap-4">
+                        <div
+                            class="w-12 h-12 rounded-full bg-cyan-900 flex items-center justify-center text-cyan-500 font-bold border border-cyan-500/20">
+                            SJ</div>
+                        <div>
+                            <h4 class="font-bold text-sm">Sarah Jenkins</h4>
+                            <p class="text-[10px] text-cyan-500 uppercase font-mono">CTO, DataCloud Systems</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="glass p-8 rounded-2xl border-l-2 border-blue-500">
+                    <p class="italic text-gray-400 mb-6">"The training modules reduced our employee phishing
+                        susceptibility by 85% within the first quarter. Highly recommended."</p>
+                    <div class="flex items-center gap-4">
+                        <div
+                            class="w-12 h-12 rounded-full bg-blue-900 flex items-center justify-center text-blue-500 font-bold border border-blue-500/20">
+                            MT</div>
+                        <div>
+                            <h4 class="font-bold text-sm">Marcus Thorne</h4>
+                            <p class="text-[10px] text-blue-500 uppercase font-mono">Security Lead, Global Finance</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <section class="py-10 bg-black">
+        <div class="container mx-auto px-6 max-w-3xl">
+            <h2 class="text-3xl font-black text-center mb-12 uppercase italic text-white">Security <span
+                    class="text-cyan-500">FAQ</span></h2>
+            <div class="space-y-4">
+                <details class="glass rounded-2xl p-6 group cursor-pointer">
+                    <summary
+                        class="list-none flex justify-between items-center font-bold text-sm uppercase tracking-wider text-white">
+                        How do you detect Zero-Day threats?
+                        <i class="fas fa-chevron-down text-cyan-500 group-open:rotate-180 transition"></i>
+                    </summary>
+                    <p class="mt-4 text-gray-500 text-sm leading-relaxed">We utilize behavioral heuristics and AI-driven
+                        sandboxing to identify suspicious activities that don't match known malware signatures.</p>
+                </details>
+                <details class="glass rounded-2xl p-6 group cursor-pointer">
+                    <summary
+                        class="list-none flex justify-between items-center font-bold text-sm uppercase tracking-wider text-white">
+                        Is my data encrypted during transit?
+                        <i class="fas fa-chevron-down text-cyan-500 group-open:rotate-180 transition"></i>
+                    </summary>
+                    <p class="mt-4 text-gray-500 text-sm leading-relaxed">Yes, all data is protected using AES-256
+                        military-grade encryption and TLS 1.3 protocols to ensure maximum privacy.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-10 bg-gradient-to-b from-black to-[#05070a]">
+        <div class="container mx-auto px-6">
+            <div
+                class="glass max-w-5xl mx-auto rounded-[40px] p-12 text-center border border-cyan-500/20 relative overflow-hidden">
+                <div
+                    class="absolute -top-24 left-1/2 -translate-x-1/2 w-64 h-64 bg-cyan-500/20 rounded-full filter blur-[80px]">
+                </div>
+                <div class="relative z-10">
+                    <i class="fas fa-satellite-dish text-4xl text-cyan-500 mb-6"></i>
+                    <h2 class="text-3xl md:text-4xl font-black mb-6 uppercase tracking-tighter italic text-white">Join
+                        the <span class="text-cyan-500">Resistance</span></h2>
+                    <p
+                        class="text-gray-400 max-w-xl mx-auto mb-10 text-sm md:text-base leading-relaxed uppercase tracking-wide font-mono">
+                        Subscribe for zero-day threat briefings.</p>
+                    <form class="flex flex-col md:flex-row gap-4 max-w-2xl mx-auto">
+                        <input type="email" placeholder="ENCRYPTED_EMAIL_ADDRESS"
+                            class="flex-1 bg-black/50 border border-white/10 rounded-2xl px-6 py-4 text-xs font-mono focus:outline-none focus:border-cyan-500 transition-all text-cyan-400">
+                        <button
+                            class="bg-cyan-500 hover:bg-cyan-400 text-black font-black px-10 py-4 rounded-2xl uppercase tracking-widest text-[10px] transition-all hover:scale-105 shadow-[0_0_20px_rgba(0,212,255,0.4)]">
+                            Sync Intelligence
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-placeholder"></div>
+    <script src="script.js"></script>
+ 
+        
+<script>
+fetch('navbar.html')
+.then(r => r.text())
+.then(html => {
+  document.getElementById('navbar').innerHTML = html;
+
+  /* ========== ACTIVE LINK ========== */
+  let page = location.pathname.split('/').pop();
+  if(page === '' || page === '/') page = 'index.html';
+
+  document.querySelectorAll('.nav-link').forEach(link=>{
+    if(link.getAttribute('href') === page){
+      link.classList.add('active');
+    }
+  });
+
+  /* ========== THEME TOGGLE ========== */
+  const toggle = document.getElementById('themeToggle');
+
+  if(localStorage.getItem('theme') === 'light'){
+    document.body.classList.add('light');
+    toggle.checked = true;
+  }
+
+  toggle.addEventListener('change',()=>{
+    document.body.classList.toggle('light');
+    localStorage.setItem(
+      'theme',
+      toggle.checked ? 'light' : 'dark'
+    );
+  });
+});
+</script>
+
+    </script>
+
+      <!-- Navbar yahan load hoga -->
+
+    <!-- BACK TO TOP BUTTON -->
+    <button id="back-to-top"
+        class="fixed bottom-8 right-8 z-[9999] bg-cyan-600 hover:bg-cyan-500 text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg shadow-cyan-900/60 transition-all duration-300 opacity-0 translate-y-10 pointer-events-none [&.show]:opacity-100 [&.show]:translate-y-0 [&.show]:pointer-events-auto">
+        <i class="fas fa-arrow-up text-xl"></i>
+    </button>
+
+    <!-- Back to Top button ka script -->
+
+
+</body>
+
+</html>
